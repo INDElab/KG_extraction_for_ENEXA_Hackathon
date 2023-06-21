@@ -4,7 +4,7 @@ This repository contains the following notebooks:
 - 1_data_notebook.ipynb
 - 2_extraction_notebook_REBEL.ipynb
 - 3_get_wikidata_ids_and_triples.ipynb
-- 4_build_KG_with_extracted_triples.ipynb
+- 4_build_KG_with_triples_extracted_by_REBEL.ipynb
 - 5_extraction_notebook_ibm_knowgl-large.ipynb
 - 6_build_KG_with_triples_extracted_by_KnowGL.ipynb
 
