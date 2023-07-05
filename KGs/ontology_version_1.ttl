@@ -1,0 +1,44 @@
+@prefix knowGL: <http://example.org/ibm-KnowGL/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rebel: <http://example.org/rebel/#> .
+@prefix wiki: <https://www.wikidata.org/wiki/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+knowGL:Type a rdfs:Class .
+
+knowGL:Cultivar owl:disjointWith knowGL:genetically_modified_potato .
+
+knowGL:Entity a rdfs:Resource ;
+    rdfs:subClassOf owl:Thing .
+
+knowGL:Relation a rdf:Property .
+
+knowGL:accountancy owl:disjointWith knowGL:legal .
+
+knowGL:aftershave owl:disjointWith knowGL:perfume .
+
+knowGL:anthropogenic owl:disjointWith knowGL:halogen .
+
+knowGL:business_practises owl:disjointWith knowGL:ethics .
+
+knowGL:carbon_dioxide owl:disjointWith knowGL:greenhouse_gas .
+
+rebel:Entity a rdfs:Resource ;
+    rdfs:subClassOf owl:Thing .
+
+rebel:Relation a rdf:Property .
+
+rdf:type owl:equivalentProperty wiki:P31 .
+
+rdfs:label xsd:datatype xsd:string .
+
+rdfs:member owl:equivalentProperty wiki:P361 .
+
+rdfs:subClassOf owl:equivalentProperty wiki:P279 .
+
+rdfs:subPropertyOf owl:equivalentProperty wiki:P1647 .
+
+wiki:id xsd:datatype xsd:string .
+
