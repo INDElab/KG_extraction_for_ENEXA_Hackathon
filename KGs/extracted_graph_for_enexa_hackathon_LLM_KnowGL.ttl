@@ -3,6 +3,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix wiki: <https://www.wikidata.org/wiki/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 knowGL:ATPTennisTournament a knowGL:Type,
         rdfs:Class ;
@@ -6051,7 +6052,7 @@ knowGL:10bis a knowGL:Business,
     rdfs:label "10bis" ;
     knowGL:parentOrganization knowGL:takeawaycom ;
     owl:sameAs wiki:Q117090139 ;
-    wiki:id "117090139",
+    wiki:id 117090139,
         "Q117090139" .
 
 knowGL:111trichloro222trifluoroethane a knowGL:Entity,
@@ -6063,7 +6064,7 @@ knowGL:111trichloro222trifluoroethane a knowGL:Entity,
     knowGL:instanceOf knowGL:chemicals,
         knowGL:four_manmade_chemicals ;
     owl:sameAs wiki:Q15927952 ;
-    wiki:id "15927952",
+    wiki:id 15927952,
         "Q15927952" .
 
 knowGL:117_million a knowGL:SovereignState ;
@@ -6081,7 +6082,7 @@ knowGL:1755_cape_ann a knowGL:Earthquake,
         "1755 Cape Ann earthquake" ;
     knowGL:instanceOf knowGL:earthquake ;
     owl:sameAs wiki:Q4552913 ;
-    wiki:id "4552913",
+    wiki:id 4552913,
         "Q4552913" .
 
 knowGL:180tbwa a knowGL:AdvertisingAgency,
@@ -6104,7 +6105,7 @@ knowGL:180tbwa a knowGL:AdvertisingAgency,
         "1811–1811 New Madrid earthquake" ;
     knowGL:instanceOf knowGL:earthquake ;
     owl:sameAs wiki:Q20018875 ;
-    wiki:id "20018875",
+    wiki:id 20018875,
         "Q20018875" .
 
 knowGL:1857_event a knowGL:Earthquake ;
@@ -6118,7 +6119,7 @@ knowGL:1886_charleston a knowGL:Earthquake,
         "1886 Charleston earthquake" ;
     knowGL:instanceOf knowGL:earthquake ;
     owl:sameAs wiki:Q477519 ;
-    wiki:id "477519",
+    wiki:id 477519,
         "Q477519" .
 
 knowGL:1972_summer_olympics a knowGL:Entity,
@@ -6127,7 +6128,7 @@ knowGL:1972_summer_olympics a knowGL:Entity,
     rdfs:label "1972 Summer Olympics" ;
     knowGL:location knowGL:munich ;
     owl:sameAs wiki:Q8438 ;
-    wiki:id "8438",
+    wiki:id 8438,
         "Q8438" .
 
 knowGL:1989_loma_prieta_earthquake a knowGL:Earthquake,
@@ -6138,7 +6139,7 @@ knowGL:1989_loma_prieta_earthquake a knowGL:Earthquake,
         knowGL:natural_disasters ;
     knowGL:location knowGL:san_francisco_bay_area ;
     owl:sameAs wiki:Q1053476 ;
-    wiki:id "1053476",
+    wiki:id 1053476,
         "Q1053476" .
 
 knowGL:1991_eruption a knowGL:Entity,
@@ -6153,7 +6154,7 @@ knowGL:1991_eruption a knowGL:Entity,
         knowGL:volcanic_eruption,
         knowGL:volcanic_eruptions ;
     owl:sameAs wiki:Q31191031 ;
-    wiki:id "31191031",
+    wiki:id 31191031,
         "Q31191031" .
 
 knowGL:1994_northridge_earthquake a knowGL:Earthquake,
@@ -6166,7 +6167,7 @@ knowGL:1994_northridge_earthquake a knowGL:Earthquake,
     knowGL:location knowGL:southern_california ;
     knowGL:partOf knowGL:southern_california_1994_northridge_earthquake ;
     owl:sameAs wiki:Q1519015 ;
-    wiki:id "1519015",
+    wiki:id 1519015,
         "Q1519015" .
 
 knowGL:1_fc_herzogenaurach a knowGL:AssociationFootballClub ;
@@ -6181,7 +6182,7 @@ knowGL:2005_birmingham_tornado a knowGL:Entity,
         knowGL:tornadoes ;
     knowGL:location knowGL:birmingham ;
     owl:sameAs wiki:Q4604038 ;
-    wiki:id "4604038",
+    wiki:id 4604038,
         "Q4604038" .
 
 knowGL:20062007 a knowGL:Entity,
@@ -6191,7 +6192,7 @@ knowGL:20062007 a knowGL:Entity,
         "2006–07 NBA season" ;
     knowGL:sportsSeasonofLeagueorCompetition knowGL:nba ;
     owl:sameAs wiki:Q53385867 ;
-    wiki:id "53385867",
+    wiki:id 53385867,
         "Q53385867" .
 
 knowGL:20062007_nba_season a knowGL:SportsSeason ;
@@ -6215,7 +6216,7 @@ knowGL:2011_world_figure_skating_championships a knowGL:Entity,
     knowGL:location knowGL:moscow,
         knowGL:yoyogi_national_gymnasium ;
     owl:sameAs wiki:Q538133 ;
-    wiki:id "538133",
+    wiki:id 538133,
         "Q538133" .
 
 knowGL:2015 a knowGL:Entity,
@@ -6225,7 +6226,7 @@ knowGL:2015 a knowGL:Entity,
         "2015 PGA Championship" ;
     knowGL:followedBy knowGL:2016 ;
     owl:sameAs wiki:Q2002 ;
-    wiki:id "2002",
+    wiki:id 2002,
         "Q2002" .
 
 knowGL:2015_european_migrant_crisis a knowGL:Entity,
@@ -6241,7 +6242,7 @@ knowGL:2015_european_migrant_crisis a knowGL:Entity,
     knowGL:hasEffect knowGL:refugee ;
     knowGL:instanceOf knowGL:refugee_crisis ;
     owl:sameAs wiki:Q20857240 ;
-    wiki:id "20857240",
+    wiki:id 20857240,
         "Q20857240" .
 
 knowGL:2015_mcdonaldss_allamerican_uniforms a knowGL:Uniform ;
@@ -6257,7 +6258,7 @@ knowGL:2015_season a knowGL:Entity,
     knowGL:sport knowGL:golf ;
     knowGL:sportsSeasonofLeagueorCompetition knowGL:royal_challengers_bangalore ;
     owl:sameAs wiki:Q18208572 ;
-    wiki:id "18208572",
+    wiki:id 18208572,
         "Q18208572" .
 
 <http://example.org/ibm-KnowGL/#2015–16_premier_league> a knowGL:Entity,
@@ -6267,7 +6268,7 @@ knowGL:2015_season a knowGL:Entity,
     knowGL:participatingTeam knowGL:manchester_united ;
     knowGL:sportsSeasonofLeagueorCompetition knowGL:major_league_soccer ;
     owl:sameAs wiki:Q19346732 ;
-    wiki:id "19346732",
+    wiki:id 19346732,
         "Q19346732" .
 
 <http://example.org/ibm-KnowGL/#2015–16_premier_league_season> a knowGL:SportsSeason ;
@@ -6284,7 +6285,7 @@ knowGL:2015_season a knowGL:Entity,
         "2016–17 season" ;
     knowGL:sportsSeasonofLeagueorCompetition knowGL:national_basketball_association ;
     owl:sameAs wiki:Q30201458 ;
-    wiki:id "30201458",
+    wiki:id 30201458,
         "Q30201458" .
 
 <http://example.org/ibm-KnowGL/#2017–18> a knowGL:Entity,
@@ -6294,7 +6295,7 @@ knowGL:2015_season a knowGL:Entity,
         "2017–18 NHL season" ;
     knowGL:sportsSeasonofLeagueorCompetition knowGL:national_hockey_league ;
     owl:sameAs wiki:Q47015413 ;
-    wiki:id "47015413",
+    wiki:id 47015413,
         "Q47015413" .
 
 <http://example.org/ibm-KnowGL/#2017–18_season> a knowGL:Entity,
@@ -6306,7 +6307,7 @@ knowGL:2015_season a knowGL:Entity,
     knowGL:sport knowGL:ice_hockey ;
     knowGL:sportsSeasonofLeagueorCompetition knowGL:national_hockey_league ;
     owl:sameAs wiki:Q47015413 ;
-    wiki:id "47015413",
+    wiki:id 47015413,
         "Q47015413" .
 
 knowGL:202324_season a knowGL:SportsSeason ;
@@ -6320,7 +6321,7 @@ knowGL:22914_tsunanmachi a knowGL:Asteroid,
     knowGL:discovererOrinventor knowGL:lowell_observatory ;
     knowGL:siteOfastronomicalDiscovery knowGL:lowell_observatory ;
     owl:sameAs wiki:Q3598144 ;
-    wiki:id "3598144",
+    wiki:id 3598144,
         "Q3598144" .
 
 knowGL:3rd_season a knowGL:Entity,
@@ -6330,7 +6331,7 @@ knowGL:3rd_season a knowGL:Entity,
         "3rd season" ;
     knowGL:sportsSeasonofLeagueorCompetition knowGL:boost_energy_league ;
     owl:sameAs wiki:Q1341352 ;
-    wiki:id "1341352",
+    wiki:id 1341352,
         "Q1341352" .
 
 knowGL:51445_concentration_camp_laborers_supplied_by_the_nazis a knowGL:ConcentrationCamp,
@@ -6357,7 +6358,7 @@ knowGL:6th_season a knowGL:Entity,
         "6th season" ;
     knowGL:sportsSeasonofLeagueorCompetition knowGL:nba ;
     owl:sameAs wiki:Q1670715 ;
-    wiki:id "1670715",
+    wiki:id 1670715,
         "Q1670715" .
 
 knowGL:a4 a knowGL:Entity,
@@ -6368,7 +6369,7 @@ knowGL:a4 a knowGL:Entity,
         "Duplex printer" ;
     knowGL:subclassOf knowGL:printers ;
     owl:sameAs wiki:Q334759 ;
-    wiki:id "334759",
+    wiki:id 334759,
         "Q334759" .
 
 knowGL:a_mark_mackinnon a knowGL:Human ;
@@ -6474,7 +6475,7 @@ knowGL:acrylonitrile_butadiene_styrene a knowGL:Entity,
     knowGL:polymerOf knowGL:styrene ;
     knowGL:subclassOf knowGL:styrene ;
     owl:sameAs wiki:Q143496 ;
-    wiki:id "143496",
+    wiki:id 143496,
         "Q143496" .
 
 knowGL:acsv_herzogenaurach a knowGL:AssociationFootballClub ;
@@ -7090,7 +7091,7 @@ knowGL:asv_herzogenaurach a knowGL:AssociationFootballClub,
     knowGL:sport knowGL:football,
         knowGL:football_clubs ;
     owl:sameAs wiki:Q298129 ;
-    wiki:id "298129",
+    wiki:id 298129,
         "Q298129" .
 
 knowGL:asylumseekers a knowGL:Entity,
@@ -7130,7 +7131,7 @@ knowGL:atp_tennis_tournament a knowGL:ATPTennisTournament,
         "Mason Open" ;
     knowGL:location knowGL:mason ;
     owl:sameAs wiki:Q26863790 ;
-    wiki:id "26863790",
+    wiki:id 26863790,
         "Q26863790" .
 
 knowGL:auschwitz a knowGL:Entity,
@@ -7454,7 +7455,7 @@ knowGL:blankets a knowGL:Bedding,
     knowGL:subclassOf knowGL:clothes,
         knowGL:shelter ;
     owl:sameAs wiki:Q5852 ;
-    wiki:id "5852",
+    wiki:id 5852,
         "Q5852" .
 
 knowGL:bombed a knowGL:Entity,
@@ -8688,7 +8689,7 @@ knowGL:eu_member_state a knowGL:Entity,
         "Member state of the European Union" ;
     knowGL:partOf knowGL:eu ;
     owl:sameAs wiki:Q44318753 ;
-    wiki:id "44318753",
+    wiki:id 44318753,
         "Q44318753" .
 
 knowGL:eu_member_states a knowGL:MemberState ;
@@ -10824,7 +10825,7 @@ knowGL:looting a knowGL:Entity,
     knowGL:hasPartsofTheclass knowGL:theft ;
     knowGL:subclassOf knowGL:theft ;
     owl:sameAs wiki:Q192623 ;
-    wiki:id "192623",
+    wiki:id 192623,
         "Q192623" .
 
 knowGL:low_stratosphere a knowGL:AtmosphericLayer ;
@@ -10841,7 +10842,7 @@ knowGL:lowell_observatory_nearearthobject_search a knowGL:AstronomicalSurvey,
     knowGL:parentOrganization knowGL:lowell_observatory ;
     knowGL:partOf knowGL:lowell_observatory ;
     owl:sameAs wiki:Q1165635 ;
-    wiki:id "1165635",
+    wiki:id 1165635,
         "Q1165635" .
 
 knowGL:ludwigshafen_site a knowGL:ConcentrationCamp,
@@ -11133,7 +11134,7 @@ knowGL:methyl_bromide a knowGL:Entity,
     knowGL:subjectHasrole knowGL:fumigant ;
     knowGL:use knowGL:fumigant ;
     owl:sameAs wiki:Q421758 ;
-    wiki:id "421758",
+    wiki:id 421758,
         "Q421758" .
 
 knowGL:michael_boskin a knowGL:Entity,
@@ -13072,7 +13073,7 @@ knowGL:salman_butt a knowGL:Entity,
         "Salman Butt" ;
     knowGL:sport knowGL:cricket ;
     owl:sameAs wiki:Q3273844 ;
-    wiki:id "3273844",
+    wiki:id 3273844,
         "Q3273844" .
 
 knowGL:sammy_mahdi a knowGL:Entity,
@@ -13290,7 +13291,7 @@ knowGL:sex_trafficking a knowGL:Crime,
     knowGL:partOf knowGL:human_trafficking ;
     knowGL:subclassOf knowGL:human_trafficking ;
     owl:sameAs wiki:Q21129531 ;
-    wiki:id "21129531",
+    wiki:id 21129531,
         "Q21129531" .
 
 knowGL:sex_trafficking_of_children a knowGL:Activity,
@@ -14817,7 +14818,7 @@ knowGL:weak a knowGL:Entity,
         "weak" ;
     knowGL:subclassOf knowGL:tornado ;
     owl:sameAs wiki:Q7977969 ;
-    wiki:id "7977969",
+    wiki:id 7977969,
         "Q7977969" .
 
 knowGL:west_midlands_county a knowGL:CeremonialCountyOfEngland,
@@ -15178,7 +15179,7 @@ knowGL:100_meter_sprint a knowGL:Entity,
     rdfs:label "100 meter sprint",
         "100 metres" ;
     owl:sameAs wiki:Q164761 ;
-    wiki:id "164761",
+    wiki:id 164761,
         "Q164761" .
 
 knowGL:1500_metres a knowGL:Entity,
@@ -15186,7 +15187,7 @@ knowGL:1500_metres a knowGL:Entity,
         rdfs:Resource ;
     rdfs:label "1500 metres" ;
     owl:sameAs wiki:Q191691 ;
-    wiki:id "191691",
+    wiki:id 191691,
         "Q191691" .
 
 knowGL:1500_metres_runner a knowGL:SportsDiscipline ;
@@ -15198,7 +15199,7 @@ knowGL:16 a knowGL:Entity,
     rdfs:label "16%",
         "Nikkeiichi index" ;
     owl:sameAs wiki:Q68027718 ;
-    wiki:id "68027718",
+    wiki:id 68027718,
         "Q68027718" .
 
 knowGL:1868_hayward_event a knowGL:Earthquake ;
@@ -15214,7 +15215,7 @@ knowGL:1931 a knowGL:Entity,
     rdfs:label "1931",
         "1931 Birmingham tornado" ;
     owl:sameAs wiki:Q18782 ;
-    wiki:id "18782",
+    wiki:id 18782,
         "Q18782" .
 
 knowGL:1948 a knowGL:AssociationFootballFinal,
@@ -15224,7 +15225,7 @@ knowGL:1948 a knowGL:AssociationFootballFinal,
     rdfs:label "1948",
         "1948 FIFA World Cup Final" ;
     owl:sameAs wiki:Q5165 ;
-    wiki:id "5165",
+    wiki:id 5165,
         "Q5165" .
 
 knowGL:1952_summer_olympics a knowGL:Entity,
@@ -15232,7 +15233,7 @@ knowGL:1952_summer_olympics a knowGL:Entity,
         rdfs:Resource ;
     rdfs:label "1952 Summer Olympics" ;
     owl:sameAs wiki:Q8407 ;
-    wiki:id "8407",
+    wiki:id 8407,
         "Q8407" .
 
 knowGL:1960_summer_olympics a knowGL:Entity,
@@ -15241,7 +15242,7 @@ knowGL:1960_summer_olympics a knowGL:Entity,
     rdfs:label "1960 Summer Olympics" ;
     knowGL:participant knowGL:armin_hary ;
     owl:sameAs wiki:Q8415 ;
-    wiki:id "8415",
+    wiki:id 8415,
         "Q8415" .
 
 knowGL:1990s a knowGL:Entity,
@@ -15250,7 +15251,7 @@ knowGL:1990s a knowGL:Entity,
     rdfs:label "1990s",
         "Yugoslav Wars" ;
     owl:sameAs wiki:Q34653 ;
-    wiki:id "34653",
+    wiki:id 34653,
         "Q34653" .
 
 knowGL:2006_world_cup a knowGL:Entity,
@@ -15264,7 +15265,7 @@ knowGL:2006_world_cup a knowGL:Entity,
         knowGL:world_cup ;
     knowGL:uses knowGL:teamgeist ;
     owl:sameAs wiki:Q37285 ;
-    wiki:id "37285",
+    wiki:id 37285,
         "Q37285" .
 
 knowGL:2007_report a knowGL:Entity,
@@ -15274,7 +15275,7 @@ knowGL:2007_report a knowGL:Entity,
         "2007 report" ;
     knowGL:followedBy knowGL:2010_report ;
     owl:sameAs wiki:Q18823313 ;
-    wiki:id "18823313",
+    wiki:id 18823313,
         "Q18823313" .
 
 knowGL:2010_report a knowGL:Entity,
@@ -15284,7 +15285,7 @@ knowGL:2010_report a knowGL:Entity,
         "2010 report" ;
     knowGL:follows knowGL:2007_report ;
     owl:sameAs wiki:Q10845221 ;
-    wiki:id "10845221",
+    wiki:id 10845221,
         "Q10845221" .
 
 knowGL:2011 a knowGL:Entity,
@@ -15296,7 +15297,7 @@ knowGL:2011 a knowGL:Entity,
         "2011 in Ukraine" ;
     knowGL:follows knowGL:2010 ;
     owl:sameAs wiki:Q1994 ;
-    wiki:id "1994",
+    wiki:id 1994,
         "Q1994" .
 
 knowGL:2011_christchurch_earthquake a knowGL:Earthquake,
@@ -15304,7 +15305,7 @@ knowGL:2011_christchurch_earthquake a knowGL:Earthquake,
         rdfs:Resource ;
     rdfs:label "2011 Christchurch earthquake" ;
     owl:sameAs wiki:Q5109109 ;
-    wiki:id "5109109",
+    wiki:id 5109109,
         "Q5109109" .
 
 knowGL:2011_fifa_womens_world_cup_final a knowGL:AssociationFootballFinal,
@@ -15321,7 +15322,7 @@ knowGL:2011_fifa_womens_world_cup_final a knowGL:AssociationFootballFinal,
     knowGL:sportsSeasonofLeagueorCompetition knowGL:fifa_womens_world_cup,
         knowGL:fifa_womens_world_cup_final ;
     owl:sameAs wiki:Q4621100 ;
-    wiki:id "4621100",
+    wiki:id 4621100,
         "Q4621100" .
 
 knowGL:2011_japanese_unified_regional_elections a knowGL:JapaneseRegionalElections,
@@ -15337,7 +15338,7 @@ knowGL:2011_rugby_world_cup a knowGL:Entity,
         rdfs:Resource ;
     rdfs:label "2011 Rugby World Cup" ;
     owl:sameAs wiki:Q270736 ;
-    wiki:id "270736",
+    wiki:id 270736,
         "Q270736" .
 
 knowGL:2012 a knowGL:CanadianFederalGeneralElection,
@@ -15349,7 +15350,7 @@ knowGL:2012 a knowGL:CanadianFederalGeneralElection,
         "2012 in France" ;
     knowGL:followedBy knowGL:2017 ;
     owl:sameAs wiki:Q1990 ;
-    wiki:id "1990",
+    wiki:id 1990,
         "Q1990" .
 
 knowGL:2012_rugby_world_cup a knowGL:SportsSeason ;
@@ -15361,7 +15362,7 @@ knowGL:2013 a knowGL:Entity,
     rdfs:label "2013",
         "2013 in France" ;
     owl:sameAs wiki:Q1998 ;
-    wiki:id "1998",
+    wiki:id 1998,
         "Q1998" .
 
 knowGL:2019 a knowGL:Entity,
@@ -15373,7 +15374,7 @@ knowGL:2019 a knowGL:Entity,
         "2019–20 European Union budget" ;
     knowGL:follows knowGL:2018 ;
     owl:sameAs wiki:Q25274 ;
-    wiki:id "25274",
+    wiki:id 25274,
         "Q25274" .
 
 knowGL:2020_summer_olympic_games a knowGL:SummerOlympicGames ;
@@ -15389,7 +15390,7 @@ knowGL:2020_summer_olympics a knowGL:Entity,
     rdfs:label "2020 Summer Olympics" ;
     knowGL:location knowGL:tokyo ;
     owl:sameAs wiki:Q181278 ;
-    wiki:id "181278",
+    wiki:id 181278,
         "Q181278" .
 
 <http://example.org/ibm-KnowGL/#2022–2023_irish_antiimmigration_protests> a knowGL:Demonstration,
@@ -15403,7 +15404,7 @@ knowGL:2020_summer_olympics a knowGL:Entity,
     knowGL:instanceOf knowGL:protest ;
     knowGL:partOf knowGL:irish_antiimmigration_protests ;
     owl:sameAs wiki:Q115824494 ;
-    wiki:id "115824494",
+    wiki:id 115824494,
         "Q115824494" .
 
 knowGL:23_march a knowGL:Capital,
@@ -15412,7 +15413,7 @@ knowGL:23_march a knowGL:Capital,
     rdfs:label "23 March",
         "Riga" ;
     owl:sameAs wiki:Q2445 ;
-    wiki:id "2445",
+    wiki:id 2445,
         "Q2445" .
 
 knowGL:3stripe_logo a knowGL:Logo ;
@@ -15454,7 +15455,7 @@ knowGL:ada a knowGL:Entity,
     knowGL:facetOf knowGL:refugee ;
     knowGL:instanceOf knowGL:refugee ;
     owl:sameAs wiki:Q346047 ;
-    wiki:id "346047",
+    wiki:id 346047,
         "Q346047" .
 
 knowGL:adidas_1 a knowGL:Entity,
@@ -15575,7 +15576,7 @@ knowGL:ag a knowGL:Entity,
     rdfs:label "AG",
         "Aktiengesellschaft mit beschränkter Haftung" ;
     owl:sameAs wiki:Q1090 ;
-    wiki:id "1090",
+    wiki:id 1090,
         "Q1090" .
 
 knowGL:agency a knowGL:Entity,
@@ -15795,7 +15796,7 @@ knowGL:ammonia a knowGL:Entity,
     knowGL:monomerOf knowGL:nitrogen ;
     knowGL:ownedBy knowGL:basf ;
     owl:sameAs wiki:Q4087 ;
-    wiki:id "4087",
+    wiki:id 4087,
         "Q4087" .
 
 knowGL:animal a knowGL:Entity,
@@ -17462,7 +17463,7 @@ knowGL:ecuador a knowGL:Entity,
     knowGL:containsAdministrativeterritorialEntity knowGL:quito ;
     knowGL:memberOf knowGL:who ;
     owl:sameAs wiki:Q736 ;
-    wiki:id "736",
+    wiki:id 736,
         "Q736" .
 
 knowGL:effective_equivalent_chlorine a knowGL:ChemicalQuantity,
@@ -17617,7 +17618,7 @@ knowGL:euro_stoxx_50 a knowGL:Entity,
     knowGL:operator knowGL:new_york_stock_exchange ;
     knowGL:stockExchange knowGL:new_york_stock_exchange ;
     owl:sameAs wiki:Q981010 ;
-    wiki:id "981010",
+    wiki:id 981010,
         "Q981010" .
 
 knowGL:euronext_amsterdam a knowGL:Business,
@@ -17991,7 +17992,7 @@ knowGL:fukushima_daiichi_nuclear_disaster a knowGL:Entity,
     rdfs:label " Fukushima Daiichi nuclear disaster",
         "Fukushima Daiichi nuclear disaster" ;
     owl:sameAs wiki:Q171178 ;
-    wiki:id "171178",
+    wiki:id 171178,
         "Q171178" .
 
 knowGL:fukushima_nuclear_power_plant_crisis a knowGL:NuclearDisaster ;
@@ -18702,7 +18703,7 @@ knowGL:inn a knowGL:Entity,
         "inn" ;
     knowGL:subclassOf knowGL:hotel ;
     owl:sameAs wiki:Q256020 ;
-    wiki:id "256020",
+    wiki:id 256020,
         "Q256020" .
 
 knowGL:inorganic_chemicals a knowGL:Entity,
@@ -18995,7 +18996,7 @@ knowGL:jean_castex a knowGL:Entity,
     knowGL:positionHeld knowGL:prime_minister ;
     knowGL:workLocation knowGL:nice ;
     owl:sameAs wiki:Q3171170 ;
-    wiki:id "3171170",
+    wiki:id 3171170,
         "Q3171170" .
 
 knowGL:jersey a knowGL:Clothing,
@@ -21286,7 +21287,7 @@ knowGL:reports a knowGL:AcademicJournal,
         "Journal",
         "Scientific journal" ;
     owl:sameAs wiki:Q10870555 ;
-    wiki:id "10870555",
+    wiki:id 10870555,
         "Q10870555" .
 
 knowGL:residue a knowGL:ClassOfChemicalCompoundsWithSimilarApplicationsOrFunctions,
@@ -21583,7 +21584,7 @@ knowGL:sanctuaries a knowGL:Entity,
         "Sanctuary",
         "Zoo" ;
     owl:sameAs wiki:Q64145562 ;
-    wiki:id "64145562",
+    wiki:id 64145562,
         "Q64145562" .
 
 knowGL:sanctuary a knowGL:Entity,
@@ -21612,7 +21613,7 @@ knowGL:scandinavia a knowGL:Entity,
         "scandinavia" ;
     knowGL:sharesBorderwith knowGL:eastern_europe ;
     owl:sameAs wiki:Q21195 ;
-    wiki:id "21195",
+    wiki:id 21195,
         "Q21195" .
 
 knowGL:schengen_arrangements a knowGL:AdministrativeTerritorialEntity ;
@@ -25640,7 +25641,7 @@ knowGL:1906_san_francisco_earthquake a knowGL:Earthquake,
     knowGL:namedAfter knowGL:1906_san_francisco_earthquake,
         knowGL:san_francisco ;
     owl:sameAs wiki:Q211386 ;
-    wiki:id "211386",
+    wiki:id 211386,
         "Q211386" .
 
 knowGL:1945 a knowGL:Entity,
@@ -25653,7 +25654,7 @@ knowGL:1945 a knowGL:Entity,
         "World War II" ;
     knowGL:participant knowGL:allies ;
     owl:sameAs wiki:Q5240 ;
-    wiki:id "5240",
+    wiki:id 5240,
         "Q5240" .
 
 knowGL:2010 a knowGL:Entity,
@@ -25669,7 +25670,7 @@ knowGL:2010 a knowGL:Entity,
         knowGL:2012,
         knowGL:2013 ;
     owl:sameAs wiki:Q1995 ;
-    wiki:id "1995",
+    wiki:id 1995,
         "Q1995" .
 
 knowGL:2011_fifa_womens_world_cup a knowGL:Entity,
@@ -25681,7 +25682,7 @@ knowGL:2011_fifa_womens_world_cup a knowGL:Entity,
     knowGL:sportsSeasonofLeagueorCompetition knowGL:fifa_womens_world_cup ;
     knowGL:winner knowGL:japan_womens_national_football_team ;
     owl:sameAs wiki:Q108183 ;
-    wiki:id "108183",
+    wiki:id 108183,
         "Q108183" .
 
 knowGL:2011_japan_series a knowGL:Entity,
@@ -25694,7 +25695,7 @@ knowGL:2011_japan_series a knowGL:Entity,
     knowGL:participatingTeam knowGL:chunichi_dragons,
         knowGL:fukuoka_softbank_hawks ;
     owl:sameAs wiki:Q1051989 ;
-    wiki:id "1051989",
+    wiki:id 1051989,
         "Q1051989" .
 
 knowGL:2011_tōhoku_earthquake_and_tsunami a knowGL:Earthquake,
@@ -25709,7 +25710,7 @@ knowGL:2011_tōhoku_earthquake_and_tsunami a knowGL:Earthquake,
         knowGL:tōhoku_region,
         knowGL:tōhoku_region_of_japan ;
     owl:sameAs wiki:Q36204 ;
-    wiki:id "36204",
+    wiki:id 36204,
         "Q36204" .
 
 knowGL:2011_world_artistic_gymnastics_championships a knowGL:Entity,
@@ -25724,7 +25725,7 @@ knowGL:2011_world_artistic_gymnastics_championships a knowGL:Entity,
         knowGL:world_artistic_gymnastics_championships ;
     knowGL:sportsSeasonofLeagueorCompetition knowGL:world_artistic_gymnastics_championships ;
     owl:sameAs wiki:Q221504 ;
-    wiki:id "221504",
+    wiki:id 221504,
         "Q221504" .
 
 knowGL:2016 a knowGL:Entity,
@@ -25738,7 +25739,7 @@ knowGL:2016 a knowGL:Entity,
         "2016 PGA Championship" ;
     knowGL:followedBy knowGL:2017 ;
     owl:sameAs wiki:Q25245 ;
-    wiki:id "25245",
+    wiki:id 25245,
         "Q25245" .
 
 knowGL:2017 a knowGL:CanadianFederalGeneralElection,
@@ -25762,7 +25763,7 @@ knowGL:2017 a knowGL:CanadianFederalGeneralElection,
     knowGL:follows knowGL:2016 ;
     knowGL:instanceOf knowGL:visa_liberalisation_agreement ;
     owl:sameAs wiki:Q25290 ;
-    wiki:id "25290",
+    wiki:id 25290,
         "Q25290" .
 
 knowGL:2017_ncaa_division_i_mens_basketball_corruption_scandal a knowGL:SportsSeason ;
@@ -25781,7 +25782,7 @@ knowGL:2018 a knowGL:Entity,
         "2018–19 European Union budget" ;
     knowGL:followedBy knowGL:2019 ;
     owl:sameAs wiki:Q25291 ;
-    wiki:id "25291",
+    wiki:id 25291,
         "Q25291" .
 
 knowGL:2020_olympics a knowGL:Entity,
@@ -25798,7 +25799,7 @@ knowGL:2020_olympics a knowGL:Entity,
     knowGL:participant knowGL:ioc ;
     knowGL:participatingTeam knowGL:tokyo ;
     owl:sameAs wiki:Q181278 ;
-    wiki:id "181278",
+    wiki:id 181278,
         "Q181278" .
 
 knowGL:accountant a knowGL:AcademicDiscipline,
@@ -25967,7 +25968,7 @@ knowGL:apartments a knowGL:Entity,
         "Apartment",
         "apartments" ;
     owl:sameAs wiki:Q16910516 ;
-    wiki:id "16910516",
+    wiki:id 16910516,
         "Q16910516" .
 
 knowGL:app a knowGL:Application,
@@ -26713,7 +26714,7 @@ knowGL:engelhard_corporation a knowGL:Business,
     knowGL:parentOrganization knowGL:akzonobel,
         knowGL:basf ;
     owl:sameAs wiki:Q1342078 ;
-    wiki:id "1342078",
+    wiki:id 1342078,
         "Q1342078" .
 
 knowGL:engineering_basf a knowGL:Business ;
@@ -27989,7 +27990,7 @@ knowGL:naoto_kan a knowGL:Entity,
     knowGL:positionHeld knowGL:japan_selfdefense_forces,
         knowGL:prime_minister ;
     owl:sameAs wiki:Q47846 ;
-    wiki:id "47846",
+    wiki:id 47846,
         "Q47846" .
 
 knowGL:narendra_modi a knowGL:Entity,
@@ -29360,7 +29361,7 @@ knowGL:ultraviolet_exposure a knowGL:ElectromagneticWave,
         "Ultraviolet radiation",
         "ultraviolet exposure" ;
     owl:sameAs wiki:Q44738452 ;
-    wiki:id "44738452",
+    wiki:id 44738452,
         "Q44738452" .
 
 knowGL:ultraviolet_light a knowGL:ElectromagneticWave,
@@ -29504,7 +29505,7 @@ knowGL:uvb_radiation a knowGL:ElectromagneticWave,
         "Ultraviolet B",
         "UltravioletB" ;
     owl:sameAs wiki:Q37117917 ;
-    wiki:id "37117917",
+    wiki:id 37117917,
         "Q37117917" .
 
 knowGL:venture_capital a knowGL:Entity,
@@ -31695,7 +31696,7 @@ knowGL:1936_summer_olympics a knowGL:Entity,
     knowGL:participant knowGL:jesse_owens ;
     knowGL:winner knowGL:jesse_owens ;
     owl:sameAs wiki:Q8150 ;
-    wiki:id "8150",
+    wiki:id 8150,
         "Q8150" .
 
 knowGL:2016_eurovision_song_contest a knowGL:EurovisionSongContest,
@@ -33351,7 +33352,7 @@ knowGL:reactive a knowGL:ChemicalProcess,
         "Radical chemistry",
         "reactive" ;
     owl:sameAs wiki:Q424361 ;
-    wiki:id "424361",
+    wiki:id 424361,
         "Q424361" .
 
 knowGL:root a knowGL:Entity,
@@ -35257,7 +35258,7 @@ knowGL:2014_world_cup a knowGL:Entity,
     rdfs:label "2014 FIFA World Cup",
         "2014 World Cup" ;
     owl:sameAs wiki:Q18029870 ;
-    wiki:id "18029870",
+    wiki:id 18029870,
         "Q18029870" .
 
 knowGL:adi_dassler a knowGL:Business,
@@ -35266,7 +35267,7 @@ knowGL:adi_dassler a knowGL:Business,
         rdfs:Resource ;
     rdfs:label "Adi Dassler" ;
     owl:sameAs wiki:Q76751 ;
-    wiki:id "76751",
+    wiki:id 76751,
         "Q76751" .
 
 knowGL:adidas_ag a knowGL:Business,
@@ -35616,7 +35617,7 @@ knowGL:gross_domestic_product a knowGL:Currency,
         "gross domestic product" ;
     knowGL:location knowGL:japan ;
     owl:sameAs wiki:Q12638 ;
-    wiki:id "12638",
+    wiki:id 12638,
         "Q12638" .
 
 knowGL:halogen_compound a knowGL:Entity,
@@ -35785,7 +35786,7 @@ knowGL:isil a knowGL:Entity,
     knowGL:conflict knowGL:armed_conflict ;
     knowGL:designatedAsterroristBy knowGL:united_nations ;
     owl:sameAs wiki:Q2429253 ;
-    wiki:id "2429253",
+    wiki:id 2429253,
         "Q2429253" .
 
 knowGL:israel a knowGL:Entity,
@@ -36395,7 +36396,7 @@ knowGL:stella_mccartney a knowGL:Business,
     knowGL:ownerOf knowGL:adidas ;
     knowGL:sponsor knowGL:adidas ;
     owl:sameAs wiki:Q232812 ;
-    wiki:id "232812",
+    wiki:id 232812,
         "Q232812" .
 
 knowGL:switzerland a knowGL:Entity,
@@ -36585,7 +36586,7 @@ knowGL:vpn a knowGL:Entity,
         "VPN",
         "Virtual private network" ;
     owl:sameAs wiki:Q170963 ;
-    wiki:id "170963",
+    wiki:id 170963,
         "Q170963" .
 
 knowGL:war a knowGL:,
@@ -37583,7 +37584,7 @@ knowGL:dax a knowGL:Entity,
     rdfs:label " DAX",
         "DAX" ;
     owl:sameAs wiki:Q188878 ;
-    wiki:id "188878",
+    wiki:id 188878,
         "Q188878" .
 
 knowGL:estonia a knowGL:Entity,
@@ -39209,7 +39210,7 @@ knowGL:uv a knowGL:Cosmetics,
     knowGL:hasEffect knowGL:skin_cancer,
         knowGL:sunscreen ;
     owl:sameAs wiki:Q383568 ;
-    wiki:id "383568",
+    wiki:id 383568,
         "Q383568" .
 
 knowGL:uv_radiation a knowGL:ElectromagneticRadiation,
@@ -39223,7 +39224,7 @@ knowGL:uv_radiation a knowGL:ElectromagneticRadiation,
         "Ultraviolet radiation",
         "Ultromagnetic radiation" ;
     owl:sameAs wiki:Q11391 ;
-    wiki:id "11391",
+    wiki:id 11391,
         "Q11391" .
 
 wiki:Q10843872 wiki:P31 wiki:Q10843872 .
@@ -39672,7 +39673,7 @@ knowGL:chlorofluorocarbon a knowGL:Entity,
         knowGL:organic_compound,
         knowGL:organic_compounds ;
     owl:sameAs wiki:Q960800 ;
-    wiki:id "960800",
+    wiki:id 960800,
         "Q960800" .
 
 knowGL:german a knowGL:Entity,
@@ -40328,7 +40329,7 @@ knowGL:ozone_layer a knowGL:,
     knowGL:subclassOf knowGL:stratosphere,
         knowGL:stratospheric ;
     owl:sameAs wiki:Q79995 ;
-    wiki:id "79995",
+    wiki:id 79995,
         "Q79995" .
 
 knowGL:paris a knowGL:CommuneOfFrance,
@@ -41752,7 +41753,7 @@ knowGL:ozone_depletion a knowGL:Decay,
         knowGL:stratospheric ;
     knowGL:physicallyInteractswith knowGL:ozone ;
     owl:sameAs wiki:Q183140 ;
-    wiki:id "183140",
+    wiki:id 183140,
         "Q183140" .
 
 knowGL:skin_cancer a knowGL:Entity,
@@ -42554,7 +42555,7 @@ knowGL:prime_minister a knowGL:Entity,
     knowGL:partOf knowGL:central_administration,
         knowGL:government_of_japan ;
     owl:sameAs wiki:Q14212 ;
-    wiki:id "14212",
+    wiki:id 14212,
         "Q14212" .
 
 knowGL:un a knowGL:Council,
@@ -43338,7 +43339,7 @@ knowGL:ozone a knowGL:,
         knowGL:reactive_chlorine_compound ;
     knowGL:subjectHasrole knowGL:health_risk ;
     owl:sameAs wiki:Q36933 ;
-    wiki:id "36933",
+    wiki:id 36933,
         "Q36933" .
 
 wiki:Q484652 wiki:P31 wiki:Q43229,
@@ -43589,7 +43590,7 @@ knowGL:stratosphere a knowGL:AtmosphericLayer,
         knowGL:stratosphere,
         knowGL:troposphere ;
     owl:sameAs wiki:Q108376 ;
-    wiki:id "108376",
+    wiki:id 108376,
         "Q108376" .
 
 wiki:Q46 wiki:P150 wiki:Q212 ;
@@ -44104,7 +44105,7 @@ knowGL:adidas a knowGL:Business,
         knowGL:football,
         knowGL:golf ;
     owl:sameAs wiki:Q3895 ;
-    wiki:id "3895",
+    wiki:id 3895,
         "Q3895" .
 
 wiki:Q4830453 wiki:P31 wiki:Q167270,

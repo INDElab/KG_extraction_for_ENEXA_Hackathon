@@ -32,7 +32,7 @@ rebel:Relation a rdf:Property .
 
 rdf:type owl:equivalentProperty wiki:P31 .
 
-rdfs:label xsd:datatype xsd:string .
+rdfs:label rdfs:range xsd:string .
 
 rdfs:member owl:equivalentProperty wiki:P361 .
 
@@ -40,5 +40,5 @@ rdfs:subClassOf owl:equivalentProperty wiki:P279 .
 
 rdfs:subPropertyOf owl:equivalentProperty wiki:P1647 .
 
-wiki:id xsd:datatype xsd:string .
+wiki:id rdfs:range xsd:string .
 
