@@ -1,0 +1,18 @@
+{
+    "business division": "P199",
+    "contains administrative territorial entity": "P150",
+    "different from": "P1889",
+    "follows": "P155",
+    "headquarters location": "P159",
+    "member of": "P102",
+    "named after": "P138",
+    "owned by": "P127",
+    "owner of": "P1830",
+    "parent organization": "P749",
+    "participant": "P710",
+    "participant in": "P1344",
+    "replaces": "P1365",
+    "sibling": "P3373",
+    "sport": "P641",
+    "sports discipline competed in": "P2416"
+}

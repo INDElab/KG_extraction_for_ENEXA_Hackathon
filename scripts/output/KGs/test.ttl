@@ -1,0 +1,1984 @@
+@prefix knowGL: <http://example.org/ibm-KnowGL/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wiki: <https://www.wikidata.org/wiki/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+knowGL:Business a knowGL:Type,
+        rdfs:Class ;
+    rdfs:label "business"^^xsd:string ;
+    owl:sameAs wiki:Q4830453 ;
+    wiki:id "Q4830453"^^xsd:string .
+
+knowGL:Human a knowGL:Type,
+        rdfs:Class ;
+    rdfs:label "human"^^xsd:string ;
+    owl:sameAs wiki:Q5 ;
+    wiki:id "Q5"^^xsd:string .
+
+knowGL:MunicipalityOfGermany a knowGL:Type,
+        rdfs:Class ;
+    rdfs:label "municipality of Germany"^^xsd:string .
+
+knowGL:OlympicSportingEvent a knowGL:Type,
+        rdfs:Class ;
+    rdfs:label "Olympic sporting event"^^xsd:string ;
+    owl:sameAs wiki:Q18536594 ;
+    wiki:id "Q18536594"^^xsd:string .
+
+knowGL:OlympicSportsDisciplineEvent a knowGL:Type,
+        rdfs:Class ;
+    rdfs:label "Olympic sports discipline event"^^xsd:string ;
+    owl:sameAs wiki:Q26132862 ;
+    wiki:id "Q26132862"^^xsd:string .
+
+knowGL:SovereignState a knowGL:Type,
+        rdfs:Class ;
+    rdfs:label "sovereign state"^^xsd:string ;
+    owl:sameAs wiki:Q3624078 ;
+    wiki:id "Q3624078"^^xsd:string .
+
+knowGL:SportsClub a knowGL:Type,
+        rdfs:Class ;
+    rdfs:label "sports club"^^xsd:string ;
+    owl:sameAs wiki:Q847017 ;
+    wiki:id "Q847017"^^xsd:string .
+
+knowGL:SportsEquipment a knowGL:Type,
+        rdfs:Class ;
+    rdfs:label "sports equipment"^^xsd:string ;
+    owl:sameAs wiki:Q768186 ;
+    wiki:id "Q768186"^^xsd:string .
+
+knowGL:StateOfGermany a knowGL:Type,
+        rdfs:Class ;
+    rdfs:label "state of Germany"^^xsd:string ;
+    owl:sameAs wiki:Q1221156 ;
+    wiki:id "Q1221156"^^xsd:string .
+
+knowGL:SummerOlympicGames a knowGL:Type,
+        rdfs:Class ;
+    rdfs:label "Summer Olympic Games"^^xsd:string ;
+    owl:sameAs wiki:Q159821 ;
+    wiki:id "Q159821"^^xsd:string .
+
+knowGL:Town a knowGL:Type,
+        rdfs:Class ;
+    rdfs:label "town"^^xsd:string ;
+    owl:sameAs wiki:Q3957 ;
+    wiki:id "Q3957"^^xsd:string .
+
+knowGL:TypeOfSport a knowGL:Type,
+        rdfs:Class ;
+    rdfs:label "type of sport"^^xsd:string ;
+    owl:sameAs wiki:Q31629 ;
+    wiki:id "Q31629"^^xsd:string .
+
+knowGL:UrbanMunicipalityOfGermany a knowGL:Type,
+        rdfs:Class ;
+    rdfs:label "urban municipality of Germany"^^xsd:string ;
+    owl:sameAs wiki:Q42744322 ;
+    wiki:id "Q42744322"^^xsd:string .
+
+wiki:Q1221156 a rdfs:Class,
+        wiki:Entity ;
+    wiki:id "Q1221156"^^xsd:string .
+
+wiki:Q159821 a rdfs:Class,
+        wiki:Entity ;
+    wiki:id "Q159821"^^xsd:string .
+
+wiki:Q18536594 a rdfs:Class,
+        wiki:Entity ;
+    wiki:id "Q18536594"^^xsd:string .
+
+wiki:Q26132862 a rdfs:Class,
+        wiki:Entity ;
+    wiki:id "Q26132862"^^xsd:string .
+
+wiki:Q31629 a rdfs:Class,
+        wiki:Entity ;
+    wiki:id "Q31629"^^xsd:string .
+
+wiki:Q3624078 a rdfs:Class,
+        wiki:Entity ;
+    wiki:id "Q3624078"^^xsd:string .
+
+wiki:Q3957 a rdfs:Class,
+        wiki:Entity ;
+    wiki:id "Q3957"^^xsd:string .
+
+wiki:Q42744322 a rdfs:Class,
+        wiki:Entity ;
+    wiki:id "Q42744322"^^xsd:string .
+
+wiki:Q4830453 a rdfs:Class,
+        wiki:Entity ;
+    wiki:id "Q4830453"^^xsd:string .
+
+wiki:Q5 a rdfs:Class,
+        wiki:Entity ;
+    wiki:id "Q5"^^xsd:string .
+
+wiki:Q768186 a rdfs:Class,
+        wiki:Entity ;
+    wiki:id "Q768186"^^xsd:string .
+
+wiki:Q847017 a rdfs:Class,
+        wiki:Entity ;
+    wiki:id "Q847017"^^xsd:string .
+
+knowGL:businessDivision a knowGL:Relation,
+        rdf:Property ;
+    rdfs:label "business division"^^xsd:string ;
+    owl:sameAs wiki:P199 ;
+    wiki:id "P199"^^xsd:string .
+
+knowGL:follows a knowGL:Relation,
+        rdf:Property ;
+    rdfs:label "follows"^^xsd:string ;
+    owl:sameAs wiki:P155 ;
+    wiki:id "P155"^^xsd:string .
+
+knowGL:memberOf a knowGL:Relation,
+        rdf:Property ;
+    rdfs:label "member of"^^xsd:string ;
+    owl:sameAs wiki:P102 ;
+    wiki:id "P102"^^xsd:string .
+
+knowGL:namedAfter a knowGL:Relation,
+        rdf:Property ;
+    rdfs:label "named after"^^xsd:string ;
+    owl:sameAs wiki:P138 ;
+    wiki:id "P138"^^xsd:string .
+
+knowGL:participant a knowGL:Relation,
+        rdf:Property ;
+    rdfs:label "participant"^^xsd:string ;
+    owl:sameAs wiki:P710 ;
+    wiki:id "P710"^^xsd:string .
+
+knowGL:replaces a knowGL:Relation,
+        rdf:Property ;
+    rdfs:label "replaces"^^xsd:string ;
+    owl:sameAs wiki:P1365 ;
+    wiki:id "P1365"^^xsd:string .
+
+knowGL:sport a knowGL:Relation,
+        rdf:Property ;
+    rdfs:label "sport"^^xsd:string ;
+    owl:sameAs wiki:P641 ;
+    wiki:id "P641"^^xsd:string .
+
+knowGL:sportsDisciplinecompetedIn a knowGL:Relation,
+        rdf:Property ;
+    rdfs:label "sports discipline competed in"^^xsd:string ;
+    owl:sameAs wiki:P2416 ;
+    wiki:id "P2416"^^xsd:string .
+
+knowGL:containsAdministrativeterritorialEntity a knowGL:Relation,
+        rdf:Property ;
+    rdfs:label "contains administrative territorial entity"^^xsd:string ;
+    owl:sameAs wiki:P150 ;
+    wiki:id "P150"^^xsd:string .
+
+knowGL:differentFrom a knowGL:Relation,
+        rdf:Property ;
+    rdfs:label "different from"^^xsd:string ;
+    owl:sameAs wiki:P1889 ;
+    wiki:id "P1889"^^xsd:string .
+
+knowGL:parentOrganization a knowGL:Relation,
+        rdf:Property ;
+    rdfs:label "parent organization"^^xsd:string ;
+    owl:sameAs wiki:P749 ;
+    wiki:id "P749"^^xsd:string .
+
+knowGL:participantIn a knowGL:Relation,
+        rdf:Property ;
+    rdfs:label "participant in"^^xsd:string ;
+    owl:sameAs wiki:P1344 ;
+    wiki:id "P1344"^^xsd:string .
+
+wiki:P102 a wiki:Property ;
+    wiki:id "P102"^^xsd:string .
+
+wiki:P1365 a wiki:Property ;
+    wiki:id "P1365"^^xsd:string .
+
+wiki:P138 a wiki:Property ;
+    wiki:id "P138"^^xsd:string .
+
+wiki:P155 a wiki:Property ;
+    wiki:id "P155"^^xsd:string .
+
+wiki:P199 a wiki:Property ;
+    wiki:id "P199"^^xsd:string .
+
+wiki:P2416 a wiki:Property ;
+    wiki:id "P2416"^^xsd:string .
+
+wiki:P641 a wiki:Property ;
+    wiki:id "P641"^^xsd:string .
+
+wiki:P710 a wiki:Property ;
+    wiki:id "P710"^^xsd:string .
+
+knowGL:adidas_ag a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Adidas AG"^^xsd:string ;
+    knowGL:headquartersLocation knowGL:herzogenaurach ;
+    knowGL:label "Adidas"^^xsd:string ;
+    knowGL:type knowGL:Business ;
+    owl:sameAs wiki:Q3895 ;
+    wiki:id "Q3895"^^xsd:string .
+
+knowGL:adolf_dasslers_elder_brother_rudolf a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Adolf Dassler's elder brother Rudolf"^^xsd:string ;
+    knowGL:label "Rudolf Dassler"^^xsd:string ;
+    knowGL:sibling knowGL:adolf_dassler ;
+    knowGL:type knowGL:Human .
+
+knowGL:german a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "German"^^xsd:string ;
+    knowGL:containsAdministrativeterritorialEntity knowGL:bavaria ;
+    knowGL:label "Germany"^^xsd:string ;
+    knowGL:type knowGL:SovereignState ;
+    owl:sameAs wiki:Q188 ;
+    wiki:id "Q188"^^xsd:string .
+
+knowGL:germany a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Germany"^^xsd:string ;
+    knowGL:containsAdministrativeterritorialEntity knowGL:bavaria ;
+    knowGL:label "Germany"^^xsd:string ;
+    knowGL:type knowGL:SovereignState ;
+    owl:sameAs wiki:Q183 ;
+    wiki:id "Q183"^^xsd:string .
+
+knowGL:headquartersLocation a knowGL:Relation,
+        rdf:Property ;
+    rdfs:label "headquarters location"^^xsd:string ;
+    owl:sameAs wiki:P159 ;
+    wiki:id "P159"^^xsd:string .
+
+knowGL:jesse_owenss_handmade_spikes a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Jesse Owens's handmade spikes"^^xsd:string ;
+    knowGL:label "Jesse Owens's handmade spikes"^^xsd:string ;
+    knowGL:namedAfter knowGL:jesse_owens ;
+    knowGL:type knowGL:SportsEquipment .
+
+knowGL:ownedBy a knowGL:Relation,
+        rdf:Property ;
+    rdfs:label "owned by"^^xsd:string ;
+    owl:sameAs wiki:P127 ;
+    wiki:id "P127"^^xsd:string .
+
+wiki:P1344 a wiki:Property ;
+    wiki:id "P1344"^^xsd:string .
+
+wiki:P150 a wiki:Property ;
+    wiki:id "P150"^^xsd:string .
+
+wiki:P1889 a wiki:Property ;
+    wiki:id "P1889"^^xsd:string .
+
+wiki:P749 a wiki:Property ;
+    wiki:id "P749"^^xsd:string .
+
+wiki:Q183 a wiki:Entity ;
+    wiki:P150 wiki:Q980 ;
+    wiki:P31 wiki:Q3624078 ;
+    wiki:id "Q183"^^xsd:string .
+
+wiki:Q188 a wiki:Entity ;
+    wiki:P150 wiki:Q980 ;
+    wiki:P31 wiki:Q3624078 ;
+    wiki:id "Q188"^^xsd:string .
+
+wiki:Q3895 a wiki:Entity ;
+    wiki:P159 wiki:Q1615401 ;
+    wiki:P31 wiki:Q4830453 ;
+    wiki:id "Q3895"^^xsd:string .
+
+knowGL:dassler_brothers_shoe_factory a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Dassler Brothers Shoe Factory"^^xsd:string ;
+    knowGL:label "Dassler Brothers Shoe Factory"^^xsd:string ;
+    knowGL:type knowGL:Business ;
+    owl:sameAs wiki:Q12062941 ;
+    wiki:id "Q12062941"^^xsd:string .
+
+knowGL:football a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "football"^^xsd:string ;
+    knowGL:label "Association football"^^xsd:string ;
+    knowGL:type knowGL:TypeOfSport ;
+    owl:sameAs wiki:Q2736 ;
+    wiki:id "Q2736"^^xsd:string .
+
+knowGL:gebrüder_dassler_schuhfabrik a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Gebrüder Dassler Schuhfabrik"^^xsd:string ;
+    knowGL:label "Gebrüder Dassler Schuhfabrik"^^xsd:string ;
+    knowGL:type knowGL:Business ;
+    owl:sameAs wiki:Q61237 ;
+    wiki:id "Q61237"^^xsd:string .
+
+knowGL:herzogenaurach_bavaria a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Herzogenaurach, Bavaria"^^xsd:string ;
+    knowGL:label "Herzogenaurach"^^xsd:string ;
+    knowGL:type knowGL:UrbanMunicipalityOfGermany .
+
+knowGL:spike a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "spike"^^xsd:string ;
+    knowGL:label "Spike running"^^xsd:string ;
+    knowGL:type knowGL:SportsEquipment ;
+    owl:sameAs wiki:Q147398 ;
+    wiki:id "Q147398"^^xsd:string .
+
+wiki:P127 a wiki:Property ;
+    wiki:id "P127"^^xsd:string .
+
+wiki:P159 a wiki:Property ;
+    wiki:id "P159"^^xsd:string .
+
+wiki:Q12062941 a wiki:Entity ;
+    wiki:P31 wiki:Q4830453 ;
+    wiki:id "Q12062941"^^xsd:string .
+
+wiki:Q147398 a wiki:Entity ;
+    wiki:P31 wiki:Q768186 ;
+    wiki:id "Q147398"^^xsd:string .
+
+wiki:Q2736 a wiki:Entity ;
+    wiki:P31 wiki:Q31629 ;
+    wiki:id "Q2736"^^xsd:string .
+
+wiki:Q61237 a wiki:Entity ;
+    wiki:P31 wiki:Q4830453 ;
+    wiki:id "Q61237"^^xsd:string .
+
+knowGL:adidass a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Adidas's"^^xsd:string ;
+    knowGL:label "Adidas's"^^xsd:string ;
+    knowGL:ownerOf knowGL:bayern_münchen ;
+    knowGL:type knowGL:Business ;
+    owl:sameAs wiki:Q357048 ;
+    wiki:id "Q357048"^^xsd:string .
+
+knowGL:adolf_dasslers a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Adolf Dassler's"^^xsd:string ;
+    knowGL:label "Adolf Dassler"^^xsd:string ;
+    knowGL:sibling knowGL:rudolf ;
+    knowGL:type knowGL:Human ;
+    owl:sameAs wiki:Q15781492 ;
+    wiki:id "Q15781492"^^xsd:string .
+
+knowGL:runtastic a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Runtastic"^^xsd:string ;
+    knowGL:label "Runtastic"^^xsd:string ;
+    knowGL:ownedBy knowGL:adidas ;
+    knowGL:type knowGL:Business ;
+    owl:sameAs wiki:Q7380124 ;
+    wiki:id "Q7380124"^^xsd:string .
+
+knowGL:sibling a knowGL:Relation,
+        rdf:Property ;
+    rdfs:label "sibling"^^xsd:string ;
+    owl:sameAs wiki:P3373 ;
+    wiki:id "P3373"^^xsd:string .
+
+wiki:Q15781492 a wiki:Entity ;
+    wiki:P31 wiki:Q5 ;
+    wiki:P3373 wiki:Q18028491 ;
+    wiki:id "Q15781492"^^xsd:string .
+
+wiki:Q357048 a wiki:Entity ;
+    wiki:P1830 wiki:Q15789 ;
+    wiki:P31 wiki:Q4830453 ;
+    wiki:id "Q357048"^^xsd:string .
+
+wiki:Q7380124 a wiki:Entity ;
+    wiki:P127 wiki:Q12358242 ;
+    wiki:P31 wiki:Q4830453 ;
+    wiki:id "Q7380124"^^xsd:string .
+
+knowGL:bavaria a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Bavaria"^^xsd:string ;
+    knowGL:label "Bavaria"^^xsd:string ;
+    knowGL:type knowGL:StateOfGermany ;
+    owl:sameAs wiki:Q980 ;
+    wiki:id "Q980"^^xsd:string .
+
+knowGL:ownerOf a knowGL:Relation,
+        rdf:Property ;
+    rdfs:label "owner of"^^xsd:string ;
+    owl:sameAs wiki:P1830 ;
+    wiki:id "P1830"^^xsd:string .
+
+wiki:P3373 a wiki:Property ;
+    wiki:id "P3373"^^xsd:string .
+
+wiki:Q980 a wiki:Entity ;
+    wiki:P31 wiki:Q1221156 ;
+    wiki:id "Q980"^^xsd:string .
+
+wiki:P1830 a wiki:Property ;
+    wiki:id "P1830"^^xsd:string .
+
+wiki:Q8150 a wiki:Entity ;
+    wiki:P31 wiki:Q159821,
+        wiki:Q18536594,
+        wiki:Q26132862 ;
+    wiki:P710 wiki:Q52651 ;
+    wiki:id "Q8150"^^xsd:string .
+
+knowGL:herzogenaurach a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Herzogenaurach"^^xsd:string ;
+    knowGL:label "Herzogenaurach"^^xsd:string ;
+    knowGL:type knowGL:MunicipalityOfGermany,
+        knowGL:Town,
+        knowGL:UrbanMunicipalityOfGermany ;
+    owl:sameAs wiki:Q1615401 ;
+    wiki:id "Q1615401"^^xsd:string .
+
+wiki:Q1615401 a wiki:Entity ;
+    wiki:P31 wiki:Q3957,
+        wiki:Q42744322,
+        wiki:no-wikiID ;
+    wiki:id "Q1615401"^^xsd:string .
+
+wiki:Q18028491 a wiki:Entity ;
+    wiki:P31 wiki:Q5 ;
+    wiki:P3373 wiki:Q15781492,
+        wiki:Q76751 ;
+    wiki:id "Q18028491"^^xsd:string .
+
+knowGL:adolf_dassler a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Adolf Dassler"^^xsd:string ;
+    knowGL:label "Adolf Dassler"^^xsd:string ;
+    knowGL:ownerOf knowGL:dassler_brothers_shoe_factory,
+        knowGL:gebrüder_dassler_schuhfabrik ;
+    knowGL:sibling knowGL:rudolf ;
+    knowGL:type knowGL:Human ;
+    owl:sameAs wiki:Q76751 ;
+    wiki:id "Q76751"^^xsd:string .
+
+wiki:Q52651 a wiki:Entity ;
+    wiki:P1344 wiki:Q8150,
+        wiki:no-wikiID ;
+    wiki:P2416 wiki:Q147398 ;
+    wiki:P31 wiki:Q5 ;
+    wiki:id "Q52651"^^xsd:string .
+
+wiki:Q76751 a wiki:Entity ;
+    wiki:P1830 wiki:Q12062941,
+        wiki:Q61237 ;
+    wiki:P31 wiki:Q5 ;
+    wiki:P3373 wiki:Q18028491 ;
+    wiki:id "Q76751"^^xsd:string .
+
+knowGL:rudolf a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Rudolf"^^xsd:string ;
+    knowGL:label "Rudolf Dassler"^^xsd:string,
+        "Rudolf Dassler businessman"^^xsd:string,
+        "Rudolf Dassler running shoes"^^xsd:string ;
+    knowGL:sibling knowGL:adolf_dassler,
+        knowGL:adolf_dasslers ;
+    knowGL:type knowGL:Human ;
+    owl:sameAs wiki:Q18028491 ;
+    wiki:id "Q18028491"^^xsd:string .
+
+knowGL:bayern_münchen a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Bayern München"^^xsd:string ;
+    knowGL:label "FC Bayern Munich"^^xsd:string ;
+    knowGL:memberOf knowGL:adidas ;
+    knowGL:ownedBy knowGL:adidas,
+        knowGL:adidass ;
+    knowGL:parentOrganization knowGL:adidas ;
+    knowGL:sport knowGL:football ;
+    knowGL:type knowGL:SportsClub ;
+    owl:sameAs wiki:Q15789 ;
+    wiki:id "Q15789"^^xsd:string .
+
+knowGL:jesse_owens a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Jesse Owens"^^xsd:string ;
+    knowGL:label "Jesse Owens"^^xsd:string,
+        "Jesse Owens athlete"^^xsd:string,
+        "Jesse Owens sprinter"^^xsd:string ;
+    knowGL:participantIn knowGL:1936_summer_olympics ;
+    knowGL:sportsDisciplinecompetedIn knowGL:spike ;
+    knowGL:type knowGL:Human ;
+    owl:sameAs wiki:Q52651 ;
+    wiki:id "Q52651"^^xsd:string .
+
+wiki:Q15789 a wiki:Entity ;
+    wiki:P102 wiki:Q12358242 ;
+    wiki:P127 wiki:Q12358242,
+        wiki:Q357048 ;
+    wiki:P31 wiki:Q847017 ;
+    wiki:P641 wiki:Q2736 ;
+    wiki:P749 wiki:Q12358242 ;
+    wiki:id "Q15789"^^xsd:string .
+
+knowGL:1936_summer_olympics a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "1936 Summer Olympics"^^xsd:string,
+        "1936 Summer Olympics."^^xsd:string ;
+    knowGL:label "1936 Summer Olympics"^^xsd:string,
+        "Athletics at the 1936 Summer Olympics"^^xsd:string,
+        "Athletics at the 1936 Summer Olympics – Men's 110 metres"^^xsd:string ;
+    knowGL:participant knowGL:jesse_owens ;
+    knowGL:type knowGL:OlympicSportingEvent,
+        knowGL:OlympicSportsDisciplineEvent,
+        knowGL:SummerOlympicGames ;
+    owl:sameAs wiki:Q8150 ;
+    wiki:id "Q8150"^^xsd:string .
+
+wiki:no-wikiID wiki:P138 wiki:Q52651 ;
+    wiki:P31 wiki:Q159821,
+        wiki:Q42744322,
+        wiki:Q5,
+        wiki:Q768186 ;
+    wiki:P3373 wiki:Q76751 .
+
+wiki:Q35255 a wiki:Entity ;
+    wiki:P1889 wiki:Q12358242 ;
+    wiki:P31 wiki:Q4830453 ;
+    wiki:P749 wiki:Q12358242 ;
+    wiki:id "Q35255"^^xsd:string .
+
+knowGL:puma a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Puma"^^xsd:string ;
+    knowGL:differentFrom knowGL:adidas ;
+    knowGL:label "Puma"^^xsd:string,
+        "Puma shoe company"^^xsd:string ;
+    knowGL:parentOrganization knowGL:adidas ;
+    knowGL:type knowGL:Business ;
+    owl:sameAs wiki:Q35255 ;
+    wiki:id "Q35255"^^xsd:string .
+
+wiki:Q12358242 a wiki:Entity ;
+    wiki:P1365 wiki:Q35255 ;
+    wiki:P155 wiki:Q35255 ;
+    wiki:P159 wiki:Q1615401,
+        wiki:no-wikiID ;
+    wiki:P1830 wiki:Q15789,
+        wiki:Q35255,
+        wiki:Q7380124 ;
+    wiki:P1889 wiki:Q35255 ;
+    wiki:P199 wiki:Q35255 ;
+    wiki:P31 wiki:Q4830453 ;
+    wiki:id "Q12358242"^^xsd:string .
+
+knowGL:adidas a knowGL:Entity,
+        rdfs:Resource ;
+    rdfs:label "Adidas"^^xsd:string ;
+    knowGL:businessDivision knowGL:puma ;
+    knowGL:differentFrom knowGL:puma ;
+    knowGL:follows knowGL:puma ;
+    knowGL:headquartersLocation knowGL:herzogenaurach,
+        knowGL:herzogenaurach_bavaria ;
+    knowGL:label "Adidas"^^xsd:string ;
+    knowGL:ownerOf knowGL:bayern_münchen,
+        knowGL:puma,
+        knowGL:runtastic ;
+    knowGL:replaces knowGL:puma ;
+    knowGL:type knowGL:Business ;
+    owl:sameAs wiki:Q12358242 ;
+    wiki:id "Q12358242"^^xsd:string .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.13"^^xsd:float ;
+    knowGL:object knowGL:SummerOlympicGames ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.88"^^xsd:float ;
+    knowGL:subject knowGL:1936_summer_olympics ;
+    knowGL:tripleID 76 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.11"^^xsd:float ;
+    knowGL:object knowGL:UrbanMunicipalityOfGermany ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.9"^^xsd:float ;
+    knowGL:subject knowGL:herzogenaurach_bavaria ;
+    knowGL:tripleID 45 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object "Adidas"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:adidas ;
+    knowGL:tripleID 34 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.11"^^xsd:float ;
+    knowGL:object knowGL:Human ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.9"^^xsd:float ;
+    knowGL:subject knowGL:adolf_dasslers ;
+    knowGL:tripleID 72 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.16"^^xsd:float ;
+    knowGL:object knowGL:puma ;
+    knowGL:predicate knowGL:businessDivision ;
+    knowGL:probability "0.85"^^xsd:float ;
+    knowGL:subject knowGL:adidas ;
+    knowGL:tripleID 33 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.09"^^xsd:float ;
+    wiki:object wiki:Q1221156 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.91"^^xsd:float ;
+    wiki:subject wiki:Q980 ;
+    wiki:tripleID 100 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.09"^^xsd:float ;
+    wiki:object wiki:Q1615401 ;
+    wiki:predicate wiki:P159 ;
+    wiki:probability "0.91"^^xsd:float ;
+    wiki:subject wiki:Q12358242 ;
+    wiki:tripleID 93 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.13"^^xsd:float ;
+    knowGL:object "Puma"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.88"^^xsd:float ;
+    knowGL:subject knowGL:puma ;
+    knowGL:tripleID 90 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.16"^^xsd:float ;
+    knowGL:object "Puma shoe company"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.85"^^xsd:float ;
+    knowGL:subject knowGL:puma ;
+    knowGL:tripleID 92 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.25"^^xsd:float ;
+    wiki:object wiki:Q52651 ;
+    wiki:predicate wiki:P138 ;
+    wiki:probability "0.78"^^xsd:float ;
+    wiki:subject wiki:no-wikiID ;
+    wiki:tripleID 137 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.09"^^xsd:float ;
+    wiki:object wiki:Q357048 ;
+    wiki:predicate wiki:P127 ;
+    wiki:probability "0.91"^^xsd:float ;
+    wiki:subject wiki:Q15789 ;
+    wiki:tripleID 114 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.13"^^xsd:float ;
+    knowGL:object knowGL:adidas ;
+    knowGL:predicate knowGL:ownedBy ;
+    knowGL:probability "0.88"^^xsd:float ;
+    knowGL:subject knowGL:runtastic ;
+    knowGL:tripleID 12 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.09"^^xsd:float ;
+    wiki:object wiki:Q15789 ;
+    wiki:predicate wiki:P1830 ;
+    wiki:probability "0.91"^^xsd:float ;
+    wiki:subject wiki:Q357048 ;
+    wiki:tripleID 115 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.1"^^xsd:float ;
+    wiki:object wiki:Q5 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.9"^^xsd:float ;
+    wiki:subject wiki:no-wikiID ;
+    wiki:tripleID 130 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.25"^^xsd:float ;
+    wiki:object wiki:Q768186 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.78"^^xsd:float ;
+    wiki:subject wiki:no-wikiID ;
+    wiki:tripleID 144 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.14"^^xsd:float ;
+    knowGL:object knowGL:puma ;
+    knowGL:predicate knowGL:ownerOf ;
+    knowGL:probability "0.87"^^xsd:float ;
+    knowGL:subject knowGL:adidas ;
+    knowGL:tripleID 28 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object knowGL:SportsClub ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:bayern_münchen ;
+    knowGL:tripleID 50 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.15"^^xsd:float ;
+    knowGL:object knowGL:puma ;
+    knowGL:predicate knowGL:replaces ;
+    knowGL:probability "0.86"^^xsd:float ;
+    knowGL:subject knowGL:adidas ;
+    knowGL:tripleID 30 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.14"^^xsd:float ;
+    wiki:object wiki:Q35255 ;
+    wiki:predicate wiki:P1830 ;
+    wiki:probability "0.87"^^xsd:float ;
+    wiki:subject wiki:Q12358242 ;
+    wiki:tripleID 147 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.13"^^xsd:float ;
+    knowGL:object knowGL:Business ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.88"^^xsd:float ;
+    knowGL:subject knowGL:runtastic ;
+    knowGL:tripleID 56 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.11"^^xsd:float ;
+    wiki:object wiki:no-wikiID ;
+    wiki:predicate wiki:P159 ;
+    wiki:probability "0.9"^^xsd:float ;
+    wiki:subject wiki:Q12358242 ;
+    wiki:tripleID 96 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.17"^^xsd:float ;
+    knowGL:object knowGL:OlympicSportingEvent ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.85"^^xsd:float ;
+    knowGL:subject knowGL:1936_summer_olympics ;
+    knowGL:tripleID 83 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.08"^^xsd:float ;
+    wiki:object wiki:Q1615401 ;
+    wiki:predicate wiki:P159 ;
+    wiki:probability "0.92"^^xsd:float ;
+    wiki:subject wiki:Q3895 ;
+    wiki:tripleID 97 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.11"^^xsd:float ;
+    wiki:object wiki:Q18028491 ;
+    wiki:predicate wiki:P3373 ;
+    wiki:probability "0.9"^^xsd:float ;
+    wiki:subject wiki:Q15781492 ;
+    wiki:tripleID 127 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.26"^^xsd:float ;
+    knowGL:object "Spike running"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.77"^^xsd:float ;
+    knowGL:subject knowGL:spike ;
+    knowGL:tripleID 89 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.22"^^xsd:float ;
+    knowGL:object knowGL:TypeOfSport ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.81"^^xsd:float ;
+    knowGL:subject knowGL:football ;
+    knowGL:tripleID 54 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.22"^^xsd:float ;
+    wiki:object wiki:Q31629 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.81"^^xsd:float ;
+    wiki:subject wiki:Q2736 ;
+    wiki:tripleID 118 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.26"^^xsd:float ;
+    knowGL:object "1936 Summer Olympics"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.77"^^xsd:float ;
+    knowGL:subject knowGL:1936_summer_olympics ;
+    knowGL:tripleID 85 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.15"^^xsd:float ;
+    knowGL:object knowGL:OlympicSportsDisciplineEvent ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.86"^^xsd:float ;
+    knowGL:subject knowGL:1936_summer_olympics ;
+    knowGL:tripleID 81 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object knowGL:Business ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:adidas ;
+    knowGL:tripleID 35 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object knowGL:StateOfGermany ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:bavaria ;
+    knowGL:tripleID 40 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object knowGL:herzogenaurach ;
+    knowGL:predicate knowGL:headquartersLocation ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:adidas ;
+    knowGL:tripleID 1 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.13"^^xsd:float ;
+    knowGL:object knowGL:jesse_owens ;
+    knowGL:predicate knowGL:participant ;
+    knowGL:probability "0.88"^^xsd:float ;
+    knowGL:subject knowGL:1936_summer_olympics ;
+    knowGL:tripleID 23 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object knowGL:MunicipalityOfGermany ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:herzogenaurach ;
+    knowGL:tripleID 49 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.09"^^xsd:float ;
+    wiki:object wiki:Q847017 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.91"^^xsd:float ;
+    wiki:subject wiki:Q15789 ;
+    wiki:tripleID 116 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.22"^^xsd:float ;
+    knowGL:object knowGL:football ;
+    knowGL:predicate knowGL:sport ;
+    knowGL:probability "0.81"^^xsd:float ;
+    knowGL:subject knowGL:bayern_münchen ;
+    knowGL:tripleID 8 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.07"^^xsd:float ;
+    wiki:object wiki:Q3624078 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.93"^^xsd:float ;
+    wiki:subject wiki:Q188 ;
+    wiki:tripleID 102 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.05"^^xsd:float ;
+    knowGL:object "Gebrüder Dassler Schuhfabrik"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.95"^^xsd:float ;
+    knowGL:subject knowGL:gebrüder_dassler_schuhfabrik ;
+    knowGL:tripleID 70 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.06"^^xsd:float ;
+    knowGL:object "Rudolf Dassler businessman"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.95"^^xsd:float ;
+    knowGL:subject knowGL:rudolf ;
+    knowGL:tripleID 64 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.09"^^xsd:float ;
+    wiki:object wiki:no-wikiID ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.91"^^xsd:float ;
+    wiki:subject wiki:Q1615401 ;
+    wiki:tripleID 106 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.05"^^xsd:float ;
+    wiki:object wiki:Q12062941 ;
+    wiki:predicate wiki:P1830 ;
+    wiki:probability "0.95"^^xsd:float ;
+    wiki:subject wiki:Q76751 ;
+    wiki:tripleID 124 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.15"^^xsd:float ;
+    wiki:object wiki:Q35255 ;
+    wiki:predicate wiki:P1365 ;
+    wiki:probability "0.86"^^xsd:float ;
+    wiki:subject wiki:Q12358242 ;
+    wiki:tripleID 149 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.09"^^xsd:float ;
+    wiki:object wiki:Q3624078 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.91"^^xsd:float ;
+    wiki:subject wiki:Q183 ;
+    wiki:tripleID 101 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.06"^^xsd:float ;
+    knowGL:object knowGL:adidas ;
+    knowGL:predicate knowGL:ownedBy ;
+    knowGL:probability "0.94"^^xsd:float ;
+    knowGL:subject knowGL:bayern_münchen ;
+    knowGL:tripleID 6 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.09"^^xsd:float ;
+    wiki:object wiki:Q4830453 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.91"^^xsd:float ;
+    wiki:subject wiki:Q357048 ;
+    wiki:tripleID 120 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.26"^^xsd:float ;
+    wiki:object wiki:no-wikiID ;
+    wiki:predicate wiki:P1344 ;
+    wiki:probability "0.77"^^xsd:float ;
+    wiki:subject wiki:Q52651 ;
+    wiki:tripleID 136 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.11"^^xsd:float ;
+    wiki:object wiki:Q5 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.9"^^xsd:float ;
+    wiki:subject wiki:Q18028491 ;
+    wiki:tripleID 129 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.26"^^xsd:float ;
+    knowGL:object knowGL:SummerOlympicGames ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.77"^^xsd:float ;
+    knowGL:subject knowGL:1936_summer_olympics ;
+    knowGL:tripleID 84 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.05"^^xsd:float ;
+    knowGL:object "Dassler Brothers Shoe Factory"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.95"^^xsd:float ;
+    knowGL:subject knowGL:dassler_brothers_shoe_factory ;
+    knowGL:tripleID 68 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.26"^^xsd:float ;
+    wiki:object wiki:Q147398 ;
+    wiki:predicate wiki:P2416 ;
+    wiki:probability "0.77"^^xsd:float ;
+    wiki:subject wiki:Q52651 ;
+    wiki:tripleID 138 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.1"^^xsd:float ;
+    knowGL:object "Rudolf Dassler"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.9"^^xsd:float ;
+    knowGL:subject knowGL:adolf_dasslers_elder_brother_rudolf ;
+    knowGL:tripleID 65 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.13"^^xsd:float ;
+    wiki:object wiki:Q4830453 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.88"^^xsd:float ;
+    wiki:subject wiki:Q7380124 ;
+    wiki:tripleID 119 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.26"^^xsd:float ;
+    wiki:object wiki:Q159821 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.77"^^xsd:float ;
+    wiki:subject wiki:no-wikiID ;
+    wiki:tripleID 143 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.11"^^xsd:float ;
+    knowGL:object knowGL:Human ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.9"^^xsd:float ;
+    knowGL:subject knowGL:rudolf ;
+    knowGL:tripleID 62 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.05"^^xsd:float ;
+    knowGL:object knowGL:Business ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.95"^^xsd:float ;
+    knowGL:subject knowGL:gebrüder_dassler_schuhfabrik ;
+    knowGL:tripleID 69 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.11"^^xsd:float ;
+    knowGL:object knowGL:adolf_dasslers ;
+    knowGL:predicate knowGL:sibling ;
+    knowGL:probability "0.9"^^xsd:float ;
+    knowGL:subject knowGL:rudolf ;
+    knowGL:tripleID 20 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.05"^^xsd:float ;
+    wiki:object wiki:Q4830453 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.95"^^xsd:float ;
+    wiki:subject wiki:Q12062941 ;
+    wiki:tripleID 131 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.1"^^xsd:float ;
+    wiki:object wiki:Q76751 ;
+    wiki:predicate wiki:P3373 ;
+    wiki:probability "0.9"^^xsd:float ;
+    wiki:subject wiki:no-wikiID ;
+    wiki:tripleID 123 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.16"^^xsd:float ;
+    wiki:object wiki:Q35255 ;
+    wiki:predicate wiki:P199 ;
+    wiki:probability "0.85"^^xsd:float ;
+    wiki:subject wiki:Q12358242 ;
+    wiki:tripleID 152 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.11"^^xsd:float ;
+    knowGL:object "Herzogenaurach"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.9"^^xsd:float ;
+    knowGL:subject knowGL:herzogenaurach_bavaria ;
+    knowGL:tripleID 44 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object "Adolf Dassler"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:adolf_dassler ;
+    knowGL:tripleID 63 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.13"^^xsd:float ;
+    knowGL:object knowGL:Business ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.88"^^xsd:float ;
+    knowGL:subject knowGL:adidas ;
+    knowGL:tripleID 53 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.13"^^xsd:float ;
+    wiki:object wiki:Q35255 ;
+    wiki:predicate wiki:P1889 ;
+    wiki:probability "0.88"^^xsd:float ;
+    wiki:subject wiki:Q12358242 ;
+    wiki:tripleID 150 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.13"^^xsd:float ;
+    knowGL:object knowGL:runtastic ;
+    knowGL:predicate knowGL:ownerOf ;
+    knowGL:probability "0.88"^^xsd:float ;
+    knowGL:subject knowGL:adidas ;
+    knowGL:tripleID 9 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.26"^^xsd:float ;
+    knowGL:object knowGL:Human ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.77"^^xsd:float ;
+    knowGL:subject knowGL:jesse_owens ;
+    knowGL:tripleID 74 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.26"^^xsd:float ;
+    wiki:object wiki:Q5 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.77"^^xsd:float ;
+    wiki:subject wiki:Q52651 ;
+    wiki:tripleID 139 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object knowGL:bavaria ;
+    knowGL:predicate knowGL:containsAdministrativeterritorialEntity ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:germany ;
+    knowGL:tripleID 2 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.05"^^xsd:float ;
+    knowGL:object knowGL:dassler_brothers_shoe_factory ;
+    knowGL:predicate knowGL:ownerOf ;
+    knowGL:probability "0.95"^^xsd:float ;
+    knowGL:subject knowGL:adolf_dassler ;
+    knowGL:tripleID 18 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.11"^^xsd:float ;
+    wiki:object wiki:Q15781492 ;
+    wiki:predicate wiki:P3373 ;
+    wiki:probability "0.9"^^xsd:float ;
+    wiki:subject wiki:Q18028491 ;
+    wiki:tripleID 126 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object "Herzogenaurach"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:herzogenaurach ;
+    knowGL:tripleID 36 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.14"^^xsd:float ;
+    knowGL:object knowGL:adidas ;
+    knowGL:predicate knowGL:parentOrganization ;
+    knowGL:probability "0.87"^^xsd:float ;
+    knowGL:subject knowGL:puma ;
+    knowGL:tripleID 27 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.11"^^xsd:float ;
+    knowGL:object knowGL:rudolf ;
+    knowGL:predicate knowGL:sibling ;
+    knowGL:probability "0.9"^^xsd:float ;
+    knowGL:subject knowGL:adolf_dasslers ;
+    knowGL:tripleID 21 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.25"^^xsd:float ;
+    knowGL:object "Jesse Owens's handmade spikes"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.78"^^xsd:float ;
+    knowGL:subject knowGL:jesse_owenss_handmade_spikes ;
+    knowGL:tripleID 86 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.15"^^xsd:float ;
+    wiki:object wiki:Q26132862 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.86"^^xsd:float ;
+    wiki:subject wiki:Q8150 ;
+    wiki:tripleID 141 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object knowGL:adolf_dassler ;
+    knowGL:predicate knowGL:sibling ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:rudolf ;
+    knowGL:tripleID 16 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.26"^^xsd:float ;
+    knowGL:object "Jesse Owens"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.77"^^xsd:float ;
+    knowGL:subject knowGL:jesse_owens ;
+    knowGL:tripleID 77 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.11"^^xsd:float ;
+    knowGL:object "Adolf Dassler"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.9"^^xsd:float ;
+    knowGL:subject knowGL:adolf_dasslers ;
+    knowGL:tripleID 73 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object knowGL:adidas ;
+    knowGL:predicate knowGL:memberOf ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:bayern_münchen ;
+    knowGL:tripleID 10 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.13"^^xsd:float ;
+    wiki:object wiki:Q4830453 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.88"^^xsd:float ;
+    wiki:subject wiki:Q35255 ;
+    wiki:tripleID 153 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.09"^^xsd:float ;
+    wiki:object wiki:Q4830453 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.91"^^xsd:float ;
+    wiki:subject wiki:Q12358242 ;
+    wiki:tripleID 98 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object "Bavaria"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:bavaria ;
+    knowGL:tripleID 38 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.13"^^xsd:float ;
+    knowGL:object knowGL:adidas ;
+    knowGL:predicate knowGL:differentFrom ;
+    knowGL:probability "0.88"^^xsd:float ;
+    knowGL:subject knowGL:puma ;
+    knowGL:tripleID 32 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.13"^^xsd:float ;
+    knowGL:object "Adidas"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.88"^^xsd:float ;
+    knowGL:subject knowGL:adidas ;
+    knowGL:tripleID 52 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.13"^^xsd:float ;
+    wiki:object wiki:Q52651 ;
+    wiki:predicate wiki:P710 ;
+    wiki:probability "0.88"^^xsd:float ;
+    wiki:subject wiki:Q8150 ;
+    wiki:tripleID 135 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object "Adidas's"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:adidass ;
+    knowGL:tripleID 59 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.15"^^xsd:float ;
+    knowGL:object "Athletics at the 1936 Summer Olympics"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.86"^^xsd:float ;
+    knowGL:subject knowGL:1936_summer_olympics ;
+    knowGL:tripleID 80 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object knowGL:rudolf ;
+    knowGL:predicate knowGL:sibling ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:adolf_dassler ;
+    knowGL:tripleID 15 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.05"^^xsd:float ;
+    knowGL:object knowGL:Business ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.95"^^xsd:float ;
+    knowGL:subject knowGL:dassler_brothers_shoe_factory ;
+    knowGL:tripleID 67 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.11"^^xsd:float ;
+    wiki:object wiki:Q5 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.9"^^xsd:float ;
+    wiki:subject wiki:Q15781492 ;
+    wiki:tripleID 133 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object "Germany"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:germany ;
+    knowGL:tripleID 39 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.13"^^xsd:float ;
+    knowGL:object "1936 Summer Olympics"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.88"^^xsd:float ;
+    knowGL:subject knowGL:1936_summer_olympics ;
+    knowGL:tripleID 75 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.26"^^xsd:float ;
+    wiki:object wiki:Q768186 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.77"^^xsd:float ;
+    wiki:subject wiki:Q147398 ;
+    wiki:tripleID 145 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.22"^^xsd:float ;
+    wiki:object wiki:Q2736 ;
+    wiki:predicate wiki:P641 ;
+    wiki:probability "0.81"^^xsd:float ;
+    wiki:subject wiki:Q15789 ;
+    wiki:tripleID 109 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.09"^^xsd:float ;
+    wiki:object wiki:Q18028491 ;
+    wiki:predicate wiki:P3373 ;
+    wiki:probability "0.91"^^xsd:float ;
+    wiki:subject wiki:Q76751 ;
+    wiki:tripleID 121 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.13"^^xsd:float ;
+    wiki:object wiki:Q159821 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.88"^^xsd:float ;
+    wiki:subject wiki:Q8150 ;
+    wiki:tripleID 140 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.13"^^xsd:float ;
+    knowGL:object "Runtastic"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.88"^^xsd:float ;
+    knowGL:subject knowGL:runtastic ;
+    knowGL:tripleID 57 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.08"^^xsd:float ;
+    knowGL:object "Adidas"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.92"^^xsd:float ;
+    knowGL:subject knowGL:adidas_ag ;
+    knowGL:tripleID 48 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object knowGL:Human ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:adolf_dassler ;
+    knowGL:tripleID 60 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.15"^^xsd:float ;
+    wiki:object wiki:Q35255 ;
+    wiki:predicate wiki:P155 ;
+    wiki:probability "0.86"^^xsd:float ;
+    wiki:subject wiki:Q12358242 ;
+    wiki:tripleID 148 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.09"^^xsd:float ;
+    wiki:object wiki:Q12358242 ;
+    wiki:predicate wiki:P749 ;
+    wiki:probability "0.91"^^xsd:float ;
+    wiki:subject wiki:Q15789 ;
+    wiki:tripleID 112 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.13"^^xsd:float ;
+    wiki:object wiki:Q12358242 ;
+    wiki:predicate wiki:P127 ;
+    wiki:probability "0.88"^^xsd:float ;
+    wiki:subject wiki:Q7380124 ;
+    wiki:tripleID 113 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.08"^^xsd:float ;
+    wiki:object wiki:Q42744322 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.92"^^xsd:float ;
+    wiki:subject wiki:Q1615401 ;
+    wiki:tripleID 99 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.09"^^xsd:float ;
+    wiki:object wiki:Q76751 ;
+    wiki:predicate wiki:P3373 ;
+    wiki:probability "0.91"^^xsd:float ;
+    wiki:subject wiki:Q18028491 ;
+    wiki:tripleID 122 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.06"^^xsd:float ;
+    wiki:object wiki:Q15789 ;
+    wiki:predicate wiki:P1830 ;
+    wiki:probability "0.94"^^xsd:float ;
+    wiki:subject wiki:Q12358242 ;
+    wiki:tripleID 108 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.06"^^xsd:float ;
+    knowGL:object knowGL:bayern_münchen ;
+    knowGL:predicate knowGL:ownerOf ;
+    knowGL:probability "0.94"^^xsd:float ;
+    knowGL:subject knowGL:adidas ;
+    knowGL:tripleID 7 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.22"^^xsd:float ;
+    knowGL:object "Association football"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.81"^^xsd:float ;
+    knowGL:subject knowGL:football ;
+    knowGL:tripleID 55 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.13"^^xsd:float ;
+    knowGL:object knowGL:puma ;
+    knowGL:predicate knowGL:differentFrom ;
+    knowGL:probability "0.88"^^xsd:float ;
+    knowGL:subject knowGL:adidas ;
+    knowGL:tripleID 31 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object knowGL:Business ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:adidass ;
+    knowGL:tripleID 58 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.09"^^xsd:float ;
+    wiki:object wiki:Q5 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.91"^^xsd:float ;
+    wiki:subject wiki:Q76751 ;
+    wiki:tripleID 128 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.09"^^xsd:float ;
+    wiki:object wiki:Q980 ;
+    wiki:predicate wiki:P150 ;
+    wiki:probability "0.91"^^xsd:float ;
+    wiki:subject wiki:Q183 ;
+    wiki:tripleID 94 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.07"^^xsd:float ;
+    wiki:object wiki:Q980 ;
+    wiki:predicate wiki:P150 ;
+    wiki:probability "0.93"^^xsd:float ;
+    wiki:subject wiki:Q188 ;
+    wiki:tripleID 95 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object knowGL:SovereignState ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:germany ;
+    knowGL:tripleID 41 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.26"^^xsd:float ;
+    knowGL:object knowGL:SportsEquipment ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.77"^^xsd:float ;
+    knowGL:subject knowGL:spike ;
+    knowGL:tripleID 88 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.17"^^xsd:float ;
+    knowGL:object "Athletics at the 1936 Summer Olympics – Men's 110 metres"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.85"^^xsd:float ;
+    knowGL:subject knowGL:1936_summer_olympics ;
+    knowGL:tripleID 82 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.09"^^xsd:float ;
+    wiki:object wiki:Q3957 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.91"^^xsd:float ;
+    wiki:subject wiki:Q1615401 ;
+    wiki:tripleID 104 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.1"^^xsd:float ;
+    knowGL:object knowGL:adolf_dassler ;
+    knowGL:predicate knowGL:sibling ;
+    knowGL:probability "0.9"^^xsd:float ;
+    knowGL:subject knowGL:adolf_dasslers_elder_brother_rudolf ;
+    knowGL:tripleID 17 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.08"^^xsd:float ;
+    knowGL:object knowGL:Business ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.92"^^xsd:float ;
+    knowGL:subject knowGL:adidas_ag ;
+    knowGL:tripleID 47 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.08"^^xsd:float ;
+    knowGL:object knowGL:UrbanMunicipalityOfGermany ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.92"^^xsd:float ;
+    knowGL:subject knowGL:herzogenaurach ;
+    knowGL:tripleID 37 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.25"^^xsd:float ;
+    knowGL:object knowGL:jesse_owens ;
+    knowGL:predicate knowGL:namedAfter ;
+    knowGL:probability "0.78"^^xsd:float ;
+    knowGL:subject knowGL:jesse_owenss_handmade_spikes ;
+    knowGL:tripleID 25 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.08"^^xsd:float ;
+    wiki:object wiki:Q4830453 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.92"^^xsd:float ;
+    wiki:subject wiki:Q3895 ;
+    wiki:tripleID 105 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.13"^^xsd:float ;
+    wiki:object wiki:Q12358242 ;
+    wiki:predicate wiki:P1889 ;
+    wiki:probability "0.88"^^xsd:float ;
+    wiki:subject wiki:Q35255 ;
+    wiki:tripleID 151 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object knowGL:bayern_münchen ;
+    knowGL:predicate knowGL:ownerOf ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:adidass ;
+    knowGL:tripleID 14 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object knowGL:Town ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:herzogenaurach ;
+    knowGL:tripleID 46 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.13"^^xsd:float ;
+    knowGL:object knowGL:Business ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.88"^^xsd:float ;
+    knowGL:subject knowGL:puma ;
+    knowGL:tripleID 91 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.11"^^xsd:float ;
+    knowGL:object knowGL:herzogenaurach_bavaria ;
+    knowGL:predicate knowGL:headquartersLocation ;
+    knowGL:probability "0.9"^^xsd:float ;
+    knowGL:subject knowGL:adidas ;
+    knowGL:tripleID 4 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.16"^^xsd:float ;
+    knowGL:object "Jesse Owens athlete"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.86"^^xsd:float ;
+    knowGL:subject knowGL:jesse_owens ;
+    knowGL:tripleID 79 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.17"^^xsd:float ;
+    knowGL:object knowGL:1936_summer_olympics ;
+    knowGL:predicate knowGL:participantIn ;
+    knowGL:probability "0.85"^^xsd:float ;
+    knowGL:subject knowGL:jesse_owens ;
+    knowGL:tripleID 22 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.07"^^xsd:float ;
+    knowGL:object knowGL:SovereignState ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.93"^^xsd:float ;
+    knowGL:subject knowGL:german ;
+    knowGL:tripleID 42 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object knowGL:adidass ;
+    knowGL:predicate knowGL:ownedBy ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:bayern_münchen ;
+    knowGL:tripleID 13 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.14"^^xsd:float ;
+    wiki:object wiki:Q12358242 ;
+    wiki:predicate wiki:P749 ;
+    wiki:probability "0.87"^^xsd:float ;
+    wiki:subject wiki:Q35255 ;
+    wiki:tripleID 146 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.15"^^xsd:float ;
+    knowGL:object knowGL:puma ;
+    knowGL:predicate knowGL:follows ;
+    knowGL:probability "0.86"^^xsd:float ;
+    knowGL:subject knowGL:adidas ;
+    knowGL:tripleID 29 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.13"^^xsd:float ;
+    wiki:object wiki:Q7380124 ;
+    wiki:predicate wiki:P1830 ;
+    wiki:probability "0.88"^^xsd:float ;
+    wiki:subject wiki:Q12358242 ;
+    wiki:tripleID 110 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.07"^^xsd:float ;
+    knowGL:object knowGL:bavaria ;
+    knowGL:predicate knowGL:containsAdministrativeterritorialEntity ;
+    knowGL:probability "0.93"^^xsd:float ;
+    knowGL:subject knowGL:german ;
+    knowGL:tripleID 3 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.11"^^xsd:float ;
+    knowGL:object "Rudolf Dassler"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.9"^^xsd:float ;
+    knowGL:subject knowGL:rudolf ;
+    knowGL:tripleID 61 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.08"^^xsd:float ;
+    knowGL:object knowGL:herzogenaurach ;
+    knowGL:predicate knowGL:headquartersLocation ;
+    knowGL:probability "0.92"^^xsd:float ;
+    knowGL:subject knowGL:adidas_ag ;
+    knowGL:tripleID 5 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.13"^^xsd:float ;
+    wiki:object wiki:Q4830453 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.88"^^xsd:float ;
+    wiki:subject wiki:Q12358242 ;
+    wiki:tripleID 117 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.09"^^xsd:float ;
+    wiki:object wiki:Q12358242 ;
+    wiki:predicate wiki:P102 ;
+    wiki:probability "0.91"^^xsd:float ;
+    wiki:subject wiki:Q15789 ;
+    wiki:tripleID 111 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.05"^^xsd:float ;
+    wiki:object wiki:Q4830453 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.95"^^xsd:float ;
+    wiki:subject wiki:Q61237 ;
+    wiki:tripleID 132 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.06"^^xsd:float ;
+    wiki:object wiki:Q12358242 ;
+    wiki:predicate wiki:P127 ;
+    wiki:probability "0.94"^^xsd:float ;
+    wiki:subject wiki:Q15789 ;
+    wiki:tripleID 107 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.17"^^xsd:float ;
+    wiki:object wiki:Q18536594 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.85"^^xsd:float ;
+    wiki:subject wiki:Q8150 ;
+    wiki:tripleID 142 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.05"^^xsd:float ;
+    wiki:object wiki:Q61237 ;
+    wiki:predicate wiki:P1830 ;
+    wiki:probability "0.95"^^xsd:float ;
+    wiki:subject wiki:Q76751 ;
+    wiki:tripleID 125 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.1"^^xsd:float ;
+    knowGL:object knowGL:Human ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.9"^^xsd:float ;
+    knowGL:subject knowGL:adolf_dasslers_elder_brother_rudolf ;
+    knowGL:tripleID 66 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.05"^^xsd:float ;
+    knowGL:object knowGL:gebrüder_dassler_schuhfabrik ;
+    knowGL:predicate knowGL:ownerOf ;
+    knowGL:probability "0.95"^^xsd:float ;
+    knowGL:subject knowGL:adolf_dassler ;
+    knowGL:tripleID 19 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.26"^^xsd:float ;
+    knowGL:object knowGL:spike ;
+    knowGL:predicate knowGL:sportsDisciplinecompetedIn ;
+    knowGL:probability "0.77"^^xsd:float ;
+    knowGL:subject knowGL:jesse_owens ;
+    knowGL:tripleID 26 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.07"^^xsd:float ;
+    knowGL:object "Germany"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.93"^^xsd:float ;
+    knowGL:subject knowGL:german ;
+    knowGL:tripleID 43 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.17"^^xsd:float ;
+    wiki:object wiki:Q8150 ;
+    wiki:predicate wiki:P1344 ;
+    wiki:probability "0.85"^^xsd:float ;
+    wiki:subject wiki:Q52651 ;
+    wiki:tripleID 134 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object knowGL:adidas ;
+    knowGL:predicate knowGL:parentOrganization ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:bayern_münchen ;
+    knowGL:tripleID 11 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.1"^^xsd:float ;
+    knowGL:object "Jesse Owens sprinter"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.9"^^xsd:float ;
+    knowGL:subject knowGL:jesse_owens ;
+    knowGL:tripleID 78 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object "Rudolf Dassler running shoes"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:rudolf ;
+    knowGL:tripleID 71 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.09"^^xsd:float ;
+    knowGL:object "FC Bayern Munich"^^xsd:string ;
+    knowGL:predicate knowGL:label ;
+    knowGL:probability "0.91"^^xsd:float ;
+    knowGL:subject knowGL:bayern_münchen ;
+    knowGL:tripleID 51 .
+
+[] a rdf:Statement,
+        wiki:Triple ;
+    wiki:logProbability "-0.11"^^xsd:float ;
+    wiki:object wiki:Q42744322 ;
+    wiki:predicate wiki:P31 ;
+    wiki:probability "0.9"^^xsd:float ;
+    wiki:subject wiki:no-wikiID ;
+    wiki:tripleID 103 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.26"^^xsd:float ;
+    knowGL:object knowGL:1936_summer_olympics ;
+    knowGL:predicate knowGL:participantIn ;
+    knowGL:probability "0.77"^^xsd:float ;
+    knowGL:subject knowGL:jesse_owens ;
+    knowGL:tripleID 24 .
+
+[] a knowGL:Triple,
+        rdf:Statement ;
+    knowGL:logProbability "-0.25"^^xsd:float ;
+    knowGL:object knowGL:SportsEquipment ;
+    knowGL:predicate knowGL:type ;
+    knowGL:probability "0.78"^^xsd:float ;
+    knowGL:subject knowGL:jesse_owenss_handmade_spikes ;
+    knowGL:tripleID 87 .
+

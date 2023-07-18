@@ -1,0 +1,8 @@
+{
+    "max_length": 1024,
+    "length_penalty": 0,
+    "num_beams": 10,
+    "num_return_sequences": 10,
+    "return_dict_in_generate": true,
+    "output_scores": true
+}

@@ -28,53 +28,57 @@ def read_generation_parameters(filepath):
 
 
 # It is a post-processing function to shape the triples from the KnowGL output
-def extract_triples(decoded_preds):
-    """ decoded_preds: list of strings, each string is a decoded prediction from KnowGL. 
-    len(decoded_preds) = num_return_sequences"""
-    
+def extract_triples(pred):
+    """ Just one sequence is passed as argument """
     triples = set()
     entity_set = set()
     entity_triples = set()
     relation_set = set()
-    for pred in decoded_preds:
-        pred = pred.replace("<s>", "").replace("<pad>", "").replace("</s>", "").replace("[", "").replace("]", "").replace("(", "").replace(")", "") # we remove the brackets and parenthesisstrip() # remove special tokens
-        if pred == '':
+    pred = pred.replace("<s>", "").replace("<pad>", "").replace("</s>", "").replace("[", "").replace("]", "").replace("(", "").replace(")", "") # we remove the brackets and parenthesisstrip() # remove special tokens
+        
+    if '$' in pred:
+        pred = pred.split('$')
+        
+    else:
+        pred = [pred]
+            
+    pred = [triple.split('|') for triple in pred]   
+        
+    for triple in pred:
+        if len(triple) != 3:
             continue
-        
-        if '$' in pred:
-            pred = pred.split('$')
-        else:
-            pred = [pred]
+        if triple[0] == '' or triple[1] == '' or triple[2] == '':
+            continue
             
-        pred = [triple.split('|') for triple in pred]   
-        
-        for triple in pred:
-            if len(triple) != 3:
-                continue
-            if triple[0] == '' or triple[1] == '' or triple[2] == '':
-                continue
+        sbj = triple[0].split('#')
+        if len(sbj) != 3:
+            continue
+        entity_set.add(sbj[0])
+        entity_triples.add((sbj[0], "label", sbj[1]))
+        entity_triples.add((sbj[0], "type", sbj[2]))
             
-            sbj = triple[0].split('#')
-            if len(sbj) != 3:
-                continue
-            entity_set.add(sbj[0])
-            entity_triples.add((sbj[0], "label", sbj[1]))
-            entity_triples.add((sbj[0], "type", sbj[2]))
+        rel = triple[1]
+        relation_set.add(rel)
             
-            rel = triple[1]
-            relation_set.add(rel)
+        obj = triple[2].split('#')
+        if len(obj) != 3:
+            continue
+        entity_set.add(obj[0])
+        entity_triples.add((obj[0], "label", obj[1]))
+        entity_triples.add((obj[0], "type", obj[2]))
             
-            obj = triple[2].split('#')
-            if len(obj) != 3:
-                continue
-            entity_set.add(obj[0])
-            entity_triples.add((obj[0], "label", obj[1]))
-            entity_triples.add((obj[0], "type", obj[2]))
-            
-            triples.add((sbj[0], rel, obj[0]))
+        triples.add((sbj[0], rel, obj[0]))
 
     return triples, entity_triples, entity_set, relation_set
 
+
+def write_extractions_to_jsonl(data, filepath):
+    """This function writes a list of dictionaries to a jsonl file"""	
+    with open(filepath, 'w', encoding='utf-8') as f:
+        for line in data:
+            line = json.dumps(line, ensure_ascii=False)
+            f.write(f'{line}\n')
+            
 
 #function to get wikidata IDs
 def call_wiki_api(item, item_type='entity'):
@@ -90,19 +94,21 @@ def call_wiki_api(item, item_type='entity'):
     return 'no-wikiID'
 
 
+def get_wikidata_id(item_list, item_type):
+    """This function returns a dictionary with items as keys and Wikidata IDs as values"""
+    
+    item_dict = {}
+    for item in sorted(item_list):
+        item_dict[item] = call_wiki_api(item, item_type)
+        
+    return item_dict
+
+
 def write_dict_to_json(dictionary, filepath):
     """This function writes a dictionary to a json file"""
     with open(filepath, 'w') as f:
         json.dump(dictionary, f, indent=4)
   
-
-def write_extractions_to_jsonl(data, filepath):
-    """This function writes a list of dictionaries to a jsonl file"""	
-    with open(filepath, 'w', encoding='utf-8') as f:
-        for line in data:
-            line = json.dumps(line, f, ensure_ascii=False)
-            f.write(f'{line}\n')
-
 
 def get_triple_components(data):
     """This function returns entities, relations, and types
@@ -127,6 +133,32 @@ def get_triple_components(data):
                 all_types.add(ent_type)
 
     return all_entities, all_relations, all_types
+
+
+def add_wikidata_triples(data, one_lookup_dict):
+    """This function returns maked wikidata triples and adds them to the data """
+    
+    for line in data:
+        extracted_triples = line["Extracted Triples and Probabilities"]
+        ent_type_triples = line["Entity Triples and Probabilities"]
+        triples_per_line = extracted_triples + ent_type_triples
+        wiki_triples = []
+        for triple in triples_per_line:
+            #print(triple)
+            #print(triple[1])
+            subj = one_lookup_dict[triple[0][0]]
+            if triple[0][1] == 'type':
+                rel = 'P31'
+            elif triple[0][1] == 'label':
+                continue
+            else:
+                rel = one_lookup_dict[triple[0][1]]
+            obj = one_lookup_dict[triple[0][2]]
+            wiki_triple = (subj, rel, obj), triple[1]
+            #print(wiki_triple)
+            wiki_triples.append(wiki_triple)
+        #print(wiki_triples)
+        line["Wikidata Triples and Probabilities"] = wiki_triples
 
 
 def get_triples_list(data, target='extracted triples'):
@@ -227,16 +259,3 @@ def shape_class_name(type_string, prefix):
     
     return shaped_type
 
-
-def add_triple_statements(g, subj, predicate, obj, index, probs, NS=KGL): 
-    """add triple statements to the graph
-    """ 
-    triple_node = BNode()
-    g.add((triple_node, RDF.type, NS.Triple))
-    g.add((triple_node, RDF.type, RDF.Statement))
-    g.add((triple_node, NS.tripleID, Literal(index, datatype=XSD.integer)))
-    g.add((triple_node, NS.subject, subj))
-    g.add((triple_node, NS.predicate, predicate))
-    g.add((triple_node, NS.object, obj))
-    g.add((triple_node, NS.probability, Literal(probs['prob'], datatype=XSD.float)))
-    g.add((triple_node, NS.logProbability, Literal(probs['log_prob'], datatype=XSD.float)))
