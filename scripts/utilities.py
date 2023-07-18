@@ -1,11 +1,18 @@
 #utility functions for the project
-
 import requests
 import json
 import string
 from rdflib import Graph, URIRef, Literal, Namespace, BNode
 from rdflib.namespace import RDFS, RDF, OWL, XSD
 
+
+
+def divide_chunks(l, n):
+      
+    # looping till length l
+    for i in range(0, len(l), n): 
+        yield l[i:i + n]
+        
 
 def get_data_from_jsonl(filepath):
     """This function reads a jsonl file and returns a list of dictionaries"""

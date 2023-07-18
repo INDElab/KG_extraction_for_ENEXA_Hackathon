@@ -105,7 +105,9 @@ def main():
     
     data = get_data_from_jsonl(args.input_file)
     data = data[:5]
-    print(f'Number of lines in the input file: {len(data)}')
+    logging.info(f'Number of lines in the input file: {len(data)}')
+    
+    logging.info(f'Loading the model and tokenizer...')
     tokenizer = AutoTokenizer.from_pretrained("ibm/knowgl-large")
     model = AutoModelForSeq2SeqLM.from_pretrained("ibm/knowgl-large").to("cuda")
     gen_kwargs = read_generation_parameters(args.generation_parameters)
@@ -114,6 +116,7 @@ def main():
     all_relations = set()
     all_types = set()
 
+    logging.info(f'Extracting triples with the model...')
     for line in data:
         inputs = line["Chunk text"] 
         model_inputs = tokenizer(inputs, max_length=1024, padding=True, truncation=True, return_tensors = 'pt')
@@ -172,17 +175,25 @@ def main():
         line["Extracted Relations"] = list(relation_set)
           
     write_extractions_to_jsonl(data, args.output_folder + '/extractions.jsonl')
+    logging.info(f'Extraction completed, outputs are written to {args.output_folder + "/extractions.jsonl"}')
     
     ################################################################################
+    logging.info(f'Getting Wikidata IDs for the extracted entities, relations and types...')
     
     rel_dict = get_wikidata_id(all_relations, 'property')
     write_dict_to_json(rel_dict, args.output_folder + '/relations.json')
+    logging.info(f'Extraction model extracted {len(rel_dict.keys())} relations')
+    logging.info(f'Wikidata IDs for the relations are written to {args.output_folder + "/relations.json"}')
     
     ent_dict = get_wikidata_id(all_entities, 'entity')
     write_dict_to_json(ent_dict, args.output_folder + '/entities.json')
+    logging.info(f'Extraction model extracted {len(ent_dict.keys())} entities')
+    logging.info(f'Wikidata IDs for the entities are written to {args.output_folder + "/entities.json"}')
     
     type_dict = get_wikidata_id(all_types, 'entity')
     write_dict_to_json(type_dict, args.output_folder + '/types.json')
+    logging.info(f'Extraction model extracted {len(type_dict.keys())} types')
+    logging.info(f'Wikidata IDs for the entities are written to {args.output_folder + "/types.json"}')
     
     one_lookup_dict = ent_dict.copy()
     one_lookup_dict.update(rel_dict)
@@ -190,12 +201,15 @@ def main():
     
     ###########################################################################
     
+    logging.info(f'Adding Wikidata IDs to the extractions...')
     add_wikidata_triples(data, one_lookup_dict)
     
     write_extractions_to_jsonl(data, args.output_folder + '/extractions_with_wikidata_triples.jsonl')
+    logging.info(f'Extractions with Wikidata IDs are written to {args.output_folder + "/extractions_with_wikidata_triples.jsonl"}')
     
     ###########################################################################
     
+    logging.info(f'Building the knowledge graph...')
     KGL = Namespace("http://example.org/ibm-KnowGL/#")
     WIKI = Namespace("https://www.wikidata.org/wiki/")
 
@@ -282,6 +296,7 @@ def main():
     ###########################################################################
     
     g.serialize(destination= args.KG_folder + "/test.ttl", format="turtle")
+    logging.info(f'Knowledge graph is written to {args.KG_folder + "/test.ttl"}')
     
 if __name__ == '__main__':
     main()
