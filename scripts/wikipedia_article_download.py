@@ -32,7 +32,7 @@ def download_wiki_articles(urls, output_dir):
 
 def main():
     parser = argparse.ArgumentParser(description='Download Wikipedia Articles')
-    parser.add_argument('-f', '--url_file', type=str, default= '/home/finapolat/KG_extraction_for_ENEXA_Hackathon/scripts/file_with_a_url_on_each_line.txt', help='File with a URL on each line')
+    parser.add_argument('-f', '--url_file', type=str, default= '/home/finapolat/KG_extraction_for_ENEXA_Hackathon/scripts/urls.json', help='File with a URL on each line')
     parser.add_argument('-o', '--output_dir', type=str, default='/home/finapolat/KG_extraction_for_ENEXA_Hackathon/scripts/downloads/', help='Output directory')
     args = parser.parse_args()
     urls = get_wiki_urls(args.url_file)
