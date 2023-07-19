@@ -1,0 +1,4 @@
+requests
+rdflib
+transformers
+torch
