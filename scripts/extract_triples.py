@@ -101,6 +101,7 @@ def main():
     parser.add_argument('--output_folder', type=str, default='/home/finapolat/KG_extraction_for_ENEXA_Hackathon/scripts/output', help='Path to the output folder')
     parser.add_argument('--generation_parameters', type=str, default='/home/finapolat/KG_extraction_for_ENEXA_Hackathon/data/generation_parameters.json', help='Path to the generation parameters file')
     parser.add_argument('--KG_folder', type=str, default='/home/finapolat/KG_extraction_for_ENEXA_Hackathon/scripts/output/KGs', help='Path to the KG folder')
+    parser.add_argument('--gpu', type=str, default='cuda', help = 'whether to use the GPU or not. Default "cuda". Provide "cpu" for running on cpu')
     args = parser.parse_args()
     
     data = get_data_from_jsonl(args.input_file)
@@ -109,7 +110,7 @@ def main():
     
     logging.info(f'Loading the model and tokenizer...')
     tokenizer = AutoTokenizer.from_pretrained("ibm/knowgl-large")
-    model = AutoModelForSeq2SeqLM.from_pretrained("ibm/knowgl-large").to("cuda")
+    model = AutoModelForSeq2SeqLM.from_pretrained("ibm/knowgl-large").to(args.gpu)
     gen_kwargs = read_generation_parameters(args.generation_parameters)
 
     all_entities = set()
@@ -122,8 +123,8 @@ def main():
         model_inputs = tokenizer(inputs, max_length=1024, padding=True, truncation=True, return_tensors = 'pt')
         #print(model_inputs['input_ids'].size())
         outputs = model.generate(
-                            model_inputs["input_ids"].to('cuda'),
-                            attention_mask=model_inputs["attention_mask"].to('cuda'),
+                            model_inputs["input_ids"].to(args.gpu),
+                            attention_mask=model_inputs["attention_mask"].to(args.gpu),
                             **gen_kwargs,
                             )
         #decoded_preds = tokenizer.batch_decode(generated_tokens, skip_special_tokens=False)
