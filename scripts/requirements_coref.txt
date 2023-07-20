@@ -1,0 +1,3 @@
+crosslingual-coreference==0.3.1
+spacy==3.2.6
+nltk
