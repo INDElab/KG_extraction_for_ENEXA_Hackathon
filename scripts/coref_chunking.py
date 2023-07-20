@@ -2,6 +2,7 @@
 
 import os
 import nltk
+import json
 from nltk.tokenize import sent_tokenize
 nltk.download('punkt')
 from crosslingual_coreference import Predictor
@@ -41,40 +42,59 @@ def divide_chunks(l, n):
 
 
 def get_coref_annotations(text_files, predictor):
-    
     data = []
     for ind, file_dict in enumerate(text_files):
-        annotations = dict()
-        annotations['Document ID'] = ind
         for key, value in file_dict.items():
-            annotations['Document Name'] = key
+            print(key)
             chunked_text = chunk_text(value)
-            for ind, chunk in enumerate(chunked_text):
-                annotations['Chunk ID'] = ind
-                annotations["Chunk text"] = predictor.predict(chunk)["resolved_text"]
-        data.append(annotations)
+            for i, chunk in enumerate(chunked_text):
+                annotations = dict()
+                annotations['Document ID'] = ind +1 
+                annotations['Document Name'] = key
+                annotations['Chunk ID'] = i+1
+                r = predictor.predict(' '.join(chunk))
+                annotations["Chunk text"] =  r["resolved_text"]
+                data.append(annotations) 
+
+    return data
+
+
+def get_annotations(text_files):
+    data = []
+    for ind, file_dict in enumerate(text_files):
+        for key, value in file_dict.items():
+            
+            chunked_text = chunk_text(value)
+            for i, chunk in enumerate(chunked_text):
+                annotations = dict()
+                annotations['Document ID'] = ind +1 
+                annotations['Document Name'] = key
+                annotations['Chunk ID'] = i+1
+                annotations["Chunk text"] = ' '.join(chunk)
+                data.append(annotations) 
 
     return data
 
 
 
-def write_jsonl(data, output_dir):
-    with open(output_dir, 'w', encoding='utf-8') as f:
+def write_jsonl(data, output_file):
+    with open(output_file, 'w', encoding='utf-8') as f:
         for line in data:
             line = json.dumps(line, ensure_ascii=False)
             f.write(f'{line}\n')
 
-    
 def main():
     parser = argparse.ArgumentParser(description='Coreference Resolution')
     parser.add_argument('-i', '--input_dir', type=str, default= '/home/finapolat/KG_extraction_for_ENEXA_Hackathon/scripts/downloads/', help='Directory with text files')
-    parser.add_argument('-o', '--output_dir', type=str, default='/home/finapolat/KG_extraction_for_ENEXA_Hackathon/scripts/data/', help='Output directory')
+    parser.add_argument('-o', '--output', type=str, default='/home/finapolat/KG_extraction_for_ENEXA_Hackathon/scripts/data/preprocessed_data_coref.jsonl', help='Output file')
     args = parser.parse_args()
     
     predictor = Predictor(language="en_core_web_sm", device=-1, model_name="spanbert")
     text_files = read_text_files(args.input_dir)    
     data = get_coref_annotations(text_files, predictor) 
-    write_jsonl(data, args.output_dir)
+    #data = get_annotations(text_files)
+    
+    write_jsonl(data, args.output)
     
     
     
